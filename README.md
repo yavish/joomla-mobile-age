@@ -22,6 +22,9 @@ What does Joomla look like in the mobile age? sms  mobile number weixin  短信 
 在短信验证码插件中要配置 三个参数 ，因为系统要用到： <br>
  //此处需要替换成自己的AK信息 <br>
     $accessKeyId = " "; // 类此用户名<br>
-   $accessKeySecret = " "; //hPlFJzJ503G3fYMjCjLsISImKonhk3 类此用户名密码<br>
+   $accessKeySecret = " "; //类此用户名密码<br>
    $request->setTemplateCode("SMS_75785186");  //SMS_75785186  短信模板<br>
+
+ 问题交流 QQ :529121330
+ 
    

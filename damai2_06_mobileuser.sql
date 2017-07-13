@@ -2117,8 +2117,8 @@ CREATE TABLE `m75mj_zmax_extension` (
 --
 
 INSERT INTO `m75mj_zmax_extension` (`id`, `type`, `logintype`, `name`, `friendName`, `version`, `author`, `authorEmail`, `authorUrl`, `description`, `post_date`, `default`, `published`, `small_image`, `big_image`, `params`) VALUES
-(1, 'weixin', 'weixin', 'weixin', '微信登陆', '1.0.2', 'ZMAX团队', 'zhang19min88@163.com', 'www.zmax99.com', 'ZMAX第三方登陆，微信登陆插件，让你的网站实现微信登陆 ', 1499825310, 1, 1, '', '', '{\"weixin_appid\":\"wx21b33c56be42fe79\",\"weixin_appsecret\":\"a32fb516834aa37cc0477999cc448979\",\"weixin_callback\":\"\",\"weixin_scope\":\"get_user_info\"}'),
-(2, 'weixinyd', 'weixinyd', 'weixinyd', '微信登陆[移动端]', '1.0.1', 'ZMAX团队', 'zhang19min88@163.com', 'www.zmax99.com', 'ZMAX第三方登陆，当用户在微信端浏览你的网站的时候，可以支持微信账号登陆', 1499827564, 1, 1, '', '', '{\"weixinyd_appid\":\"wx0e3b9e9d0b68b031\",\"weixinyd_secret\":\"36fb118273f7aa409748a7bfb4be6a41\",\"weixinyd_scope\":\"snsapi_userinfo\"}');
+(1, 'weixin', 'weixin', 'weixin', '微信登陆', '1.0.2', 'ZMAX团队', 'zhang19min88@163.com', 'www.zmax99.com', 'ZMAX第三方登陆，微信登陆插件，让你的网站实现微信登陆 ', 1499825310, 1, 1, '', '', '{\"weixin_appid\":\"wxxxxxxx\",\"weixin_appsecret\":\"a32fb516834aa37cc0477999ccxxxx\",\"weixin_callback\":\"\",\"weixin_scope\":\"get_user_info\"}'),
+(2, 'weixinyd', 'weixinyd', 'weixinyd', '微信登陆[移动端]', '1.0.1', 'ZMAX团队', 'zhang19min88@163.com', 'www.zmax99.com', 'ZMAX第三方登陆，当用户在微信端浏览你的网站的时候，可以支持微信账号登陆', 1499827564, 1, 1, '', '', '{\"weixinyd_appid\":\"wx0exxxxxx1\",\"weixinyd_secret\":\"36fbsxxxxxxxxx748a7bfb4be6a41\",\"weixinyd_scope\":\"snsapi_userinfo\"}');
 
 -- --------------------------------------------------------
 

@@ -17,11 +17,11 @@ What does Joomla look like in the mobile age? sms  mobile number weixin  短信 
        其中 手机号与微信相关采用zmax 的商业组件，请前往购买。<br>
        短信发送是采用 阿里的大于短信 接口， 需要开户购买 短信<br>
        
-   1.4 加上一个移动端 友好 自适应的免费模板 ja_simpli
-以上功能，在这个quickstart package, 只要解压到你的htdocs 根目录， 并创建一个数据库 导入根目录的sql , 修改你的 configuration.php 有关数据库用户与密码 即可。后台登录用户名与密码： admin/admin
-在短信验证码插件中要配置 三个参数 ，因为系统要用到： 
- //此处需要替换成自己的AK信息 
-    $accessKeyId = " "; // 类此用户名
-   $accessKeySecret = " "; //hPlFJzJ503G3fYMjCjLsISImKonhk3 类此用户名密码
-   $request->setTemplateCode("SMS_75785186");  //SMS_75785186  短信模板
+   1.4 加上一个移动端 友好 自适应的免费模板 ja_simpli<br>
+以上功能，在这个quickstart package, 只要解压到你的htdocs 根目录， 并创建一个数据库 导入根目录的sql , 修改你的 configuration.php 有关数据库用户与密码 即可。后台登录用户名与密码： admin/admin<br>
+在短信验证码插件中要配置 三个参数 ，因为系统要用到： <br>
+ //此处需要替换成自己的AK信息 <br>
+    $accessKeyId = " "; // 类此用户名<br>
+   $accessKeySecret = " "; //hPlFJzJ503G3fYMjCjLsISImKonhk3 类此用户名密码<br>
+   $request->setTemplateCode("SMS_75785186");  //SMS_75785186  短信模板<br>
    

@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site" method="upgrade">
+	<name>ja_simpli</name>
+	<version>1.0.0</version>
+	<creationDate>May 20 2016</creationDate>
+	<author>JoomlArt</author>
+	<authorEmail>admin@joomlart.com</authorEmail>
+	<copyright>Copyright (C) 2005 - 2016 Open Source Matters, Inc. All rights reserved.</copyright>
+	<description>
+		<![CDATA[
+		<div align="center">
+			<div class="alert alert-success" style="background-color:#DFF0D8;border-color:#D6E9C6;color: #468847;padding: 1px 0;">
+				<a href="//www.joomlart.com/joomla/templates/ja-simpli">The missing Joomla 3 template - JA Simpli</a>
+				<p>JA Simpli has been developed with the Joomla default templates in mind. We have tried to add the features that are missing from the default Joomla templates. No frameworks, default Joomla Bootstrap version but with tons of features and no coding skills required. , JA Simpli is perfect starter Joomla template that should meet all your requirements: from a simple to complex Joomla projects, personal blog to professional business portfolio site. The template layout is super flexible to adapt for any purpose with ease. With 4 premade Home variants, you have more choices to start with.</p>
+				<p>Why Simpli? Well structured, lightweight, no framework, clean code, powerful theme customizer and layout manager. On top of that enhanced compatibility with 3rd party extensions. Already tested for Stackideas Joomla Extensions such as EasyBlog, EasySocial, EasyDiscuss and Komento.</p>
+				<p>Copyright 2004 - 2016 <a href='//www.joomlart.com/' title='Visit Joomlart.com!'>JoomlArt.com</a>.</p>
+			</div>
+			<style>table.adminform{width: 100%;}</style>
+		</div>
+		]]>
+	</description>
+	<files>
+		<filename>component.php</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>helper.php</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>admin</folder>
+		<folder>css</folder>
+		<folder>etc</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>info</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+		<folder>less</folder>
+    <folder>vendors</folder>
+	</files>
+	<positions>
+		<position>banner</position>
+		<position>banner-top</position>
+		<position>debug</position>
+		<position>float-pos</position>
+		<position>lp-top-1</position>
+		<position>lp-top-2</position>
+		<position>lp-top-3</position>
+		<position>lp-top-4</position>
+		<position>lp-bot-1</position>
+		<position>lp-bot-2</position>
+		<position>lp-bot-3</position>
+		<position>lp-bot-4</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>position-12</position>
+		<position>position-13</position>
+		<position>position-14</position>
+		<position>topsl-1</position>
+		<position>topsl-2</position>
+		<position>topsl-3</position>
+		<position>topsl-4</position>
+		<position>botsl-1</position>
+		<position>botsl-2</position>
+		<position>botsl-3</position>
+		<position>botsl-4</position>
+		<position>footer</position>
+		<position>header-right-pos</position>
+		<position>social-links</position>
+		<position>social-media</position>
+		<position>top-banner</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_simpli.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_ja_simpli.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+
+			<fieldset name="styles" addfieldpath="/templates/ja_simpli/admin/field">
+				<!-- helper & preview -->
+        		<field name="tplhelper" type="tplhelper" />
+        		<field type="tplhelper" task="html" file="templates/ja_simpli/info/index.html" />				
+				<field name="stylePreview" type="CustomStylePreview" class="custom-style-preview" default=""
+					label="TPL_SIMPLI_PREVIEW"
+					description="TPL_SIMPLI_PREVIEW_DESC" />        
+
+
+				<!-- General color -->
+				<field type="legend" icon="gear"
+					label="TPL_SIMPLI_CUSTOM_STYLE_GENERAL_GROUP"
+					description1="TPL_SIMPLI_CUSTOM_STYLE_GENERAL_GROUP_DESC" expend="1" />
+
+				<field name="styleBgColor" class="" type="color" default="#fff"
+					label="TPL_SIMPLI_BG_COLOR_LABEL"
+					description="TPL_SIMPLI_BG_COLOR_DESC" />
+				<field name="styleTextColor" class="" type="color" default="#101010"
+					label="TPL_SIMPLI_TEXT_COLOR_LABEL"
+					description="TPL_SIMPLI_TEXT_COLOR_DESC" />
+				<field name="styleLinkColor" class="" type="color" default="#3498db"
+					label="TPL_SIMPLI_LINK_COLOR_LABEL"
+					description="TPL_SIMPLI_LINK_COLOR_DESC" />
+				<field name="styleLinkHoverColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_LINK_HOVER_COLOR_LABEL"
+					description="TPL_SIMPLI_LINK_HOVER_COLOR_DESC" />
+
+				<!-- Google Webfont -->
+				<field type="legend" icon="font"
+					label="Google Webfont"
+					description1="TPL_SIMPLI_CUSTOM_FONT_GROUP_DESC" />
+				<field type="textarea" name="styleGoogleFonts" class="google-fonts" cols="40" rows="5" 
+					default="PT Sans:400,400italic,700,700italic&#13;&#10;Indie Flower"
+					label="Google fonts" description="Enter fonts here to use in your site" />
+
+				<!-- Typography -->
+				<field type="legend" icon="strikethrough"
+					label="TPL_SIMPLI_CUSTOM_TYPO_GROUP"
+					description1="TPL_SIMPLI_CUSTOM_TYPO_GROUP_DESC" />
+				<field name="styleBodyFont" class="google-font" type="googlefont" default="PT Sans"
+					label="TPL_SIMPLI_BODY_FONT_LABEL"
+					description="TPL_SIMPLI_BODY_FONT_DESC" />
+				<field name="styleBodyFontSize" class="inline" type="text" default="16px"
+					label="TPL_SIMPLI_BODY_FONT_SIZE_LABEL"
+					description="TPL_SIMPLI_BODY_FONT_SIZE_DESC" />
+				<field name="styleBodyFontWeight" class="inline" type="text" default="400"
+					label="TPL_SIMPLI_BODY_FONT_WEIGHT_LABEL"
+					description="TPL_SIMPLI_BODY_FONT_WEIGHT_DESC" />
+				<field name="styleLineHeight" class="inline" type="text" default="1.4"
+					label="TPL_SIMPLI_BODY_LINE_HEIGHT_LABEL"
+					description="TPL_SIMPLI_LINE_HEIGHT_DESC" />
+				<field name="styleHeadingFont" class="google-font" type="googlefont" default="PT Sans"
+					label="TPL_SIMPLI_HEADING_FONT_LABEL"
+					description="TPL_SIMPLI_HEADING_FONT_DESC" />
+
+
+				<!-- Header custom color -->
+				<field type="legend" icon="credit-card"
+					label="TPL_SIMPLI_CUSTOM_STYLE_HEADER_GROUP"
+					description1="TPL_SIMPLI_CUSTOM_STYLE_HEADER_GROUP_DESC" />
+
+				<!-- Logo -->
+				<field type="legend"
+					label="Custom logo" subgroup="1" expend="1" />
+				<field name="styleLogoImage" class="full" type="media" default=""
+					label="TPL_SIMPLI_LOGO_LABEL"
+					description="TPL_SIMPLI_LOGO_DESC" />
+				<field name="styleLogoWidth" class="inline" type="text" default="205px"
+					label="TPL_SIMPLI_LOGO_WIDTH_LABEL"
+					description="TPL_SIMPLI_LOGO_WIDTH_DESC" />
+				<field name="styleLogoHeight" class="inline" type="text" default="90px"
+					label="TPL_SIMPLI_LOGO_HEIGHT_LABEL"
+					description="TPL_SIMPLI_LOGO_HEIGHT_DESC" />
+
+				<!-- header -->
+				<field type="legend"
+					label="Custom colors" subgroup="1" expend="1" />
+				<field name="styleHeaderBgColor" class="" type="color" default="#fff"
+					label="TPL_SIMPLI_HEADER_BG_COLOR_LABEL"
+					description="TPL_SIMPLI_HEADER_BG_COLOR_DESC" />
+				<field name="styleHeaderBorderColor" class="" type="color" default="#e0e0e0"
+					label="TPL_SIMPLI_HEADER_BORDER_COLOR_LABEL"
+					description="TPL_SIMPLI_HEADER_BORDER_COLOR_DESC" />
+				<field name="styleHeaderTextColor" class="" type="color" default="#101010"
+					label="TPL_SIMPLI_HEADER_TEXT_COLOR_LABEL"
+					description="TPL_SIMPLI_HEADER_TEXT_COLOR_DESC" />
+				<field name="styleHeaderLinkColor" class="" type="color" default="#101010"
+					label="TPL_SIMPLI_HEADER_LINK_COLOR_LABEL"
+					description="TPL_SIMPLI_HEADER_LINK_COLOR_DESC" />
+				<field name="styleHeaderLinkHoverColor" class="" type="color" default="#3498db"
+					label="TPL_SIMPLI_HEADER_LINK_HOVER_COLOR_LABEL"
+					description="TPL_SIMPLI_HEADER_LINK_HOVER_COLOR_DESC" />
+
+
+
+				<!-- Menu custom color -->
+				<field type="legend" icon="ellipsis-v"
+					label="TPL_SIMPLI_CUSTOM_STYLE_MENU_GROUP"
+					description1="TPL_SIMPLI_CUSTOM_STYLE_MENU_GROUP_DESC" />
+				<field type="legend"
+					label="Parent menu"
+					description1="TPL_SIMPLI_CUSTOM_STYLE_SUBMENU_GROUP_DESC" subgroup="1" expend="1" />
+				<field name="styleMenuBgColor" class="" type="color" default="#fff"
+					label="TPL_SIMPLI_MENU_BG_COLOR_LABEL"
+					description="TPL_SIMPLI_MENU_BG_COLOR_DESC" />
+				<field name="styleMenuBorderColor" class="" type="color" default="#eee"
+					label="TPL_SIMPLI_MENU_BORDER_COLOR_LABEL"
+					description="TPL_SIMPLI_MENU_BORDER_COLOR_DESC" />
+				<field name="styleMenuColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_MENU_COLOR_LABEL"
+					description="TPL_SIMPLI_MENU_COLOR_DESC" />
+				<field name="styleMenuHoverColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_MENU_HOVER_COLOR_LABEL"
+					description="TPL_SIMPLI_MENU_HOVER_COLOR_DESC" />
+				<field name="styleMenuActiveColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_MENU_ACTIVE_COLOR_LABEL"
+					description="TPL_SIMPLI_MENU_ACTIVE_COLOR_DESC" />
+				<field name="styleMenuBorderHoverColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_MENU_BORDER_HOVER_COLOR_LABEL"
+					description="TPL_SIMPLI_MENU_BORDER_HOVER_COLOR_DESC" />
+
+				<!-- Sub navigation -->
+				<field type="legend"
+					label="TPL_SIMPLI_CUSTOM_STYLE_SUBMENU_GROUP"
+					description1="TPL_SIMPLI_CUSTOM_STYLE_SUBMENU_GROUP_DESC" subgroup="1" expend="1" />
+				<field name="styleSubnavBgColor" class="" type="color" default="#fff"
+					label="TPL_SIMPLI_SUBNAV_BG_COLOR_LABEL"
+					description="TPL_SIMPLI_SUBNAV_BG_COLOR_DESC" />
+				<field name="styleSubnavTextColor" class="" type="color" default="#fff"
+					label="TPL_SIMPLI_SUBNAV_TEXT_COLOR_LABEL"
+					description="TPL_SIMPLI_SUBNAV_TEXT_COLOR_DESC" />
+				<field name="styleSubnavHoverBgColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_SUBNAV_HOVER_BG_COLOR_LABEL"
+					description="TPL_SIMPLI_SUBNAV_HOVER_BG_COLOR_DESC" />
+				<field name="styleSubnavHoverColor" class="" type="color" default="#fff"
+					label="TPL_SIMPLI_SUBNAV_HOVER_COLOR_LABEL"
+					description="TPL_SIMPLI_SUBNAV_HOVER_COLOR_DESC" />
+
+					<!-- Collapse navigation -->
+				<field type="legend"
+					label="TPL_SIMPLI_CUSTOM_STYLE_COLLAPSE_MENU_GROUP"
+					description1="TPL_SIMPLI_CUSTOM_STYLE_COLLAPSE_MENU_GROUP_DESC" subgroup="1" expend="1" />
+				<field name="styleCollapseMenuColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_COLLAPSE_MENU_COLOR_LABEL"
+					description="TPL_SIMPLI_COLLAPSE_MENU_COLOR_DESC" />
+				<field name="styleCollapseMenuHoverColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_COLLAPSE_MENU_HOVER_COLOR_LABEL"
+					description="TPL_SIMPLI_COLLAPSE_MENU_HOVER_COLOR_DESC" />
+				<field name="styleCollapseActiveColor" class="" type="color" default="#004597"
+					label="TPL_SIMPLI_COLLAPSE_MENU_ACTIVE_COLOR_LABEL"
+					description="TPL_SIMPLI_COLLAPSE_MENU_ACTIVE_COLOR_DESC" />
+
+				<!-- Search color -->
+				<field type="legend" icon="search"
+					label="TPL_SIMPLI_CUSTOM_STYLE_SEARCH_GROUP"
+					description1="TPL_SIMPLI_CUSTOM_STYLE_SEARCH_GROUP_DESC" />
+				<field name="styleSearchBgColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_SEARCH_BG_COLOR_LABEL"
+					description="TPL_SIMPLI_SEARCH_BG_COLOR_DESC" />
+				<field name="styleSearchTextColor" class="" type="color" default="#e0e0e0"
+					label="TPL_SIMPLI_SEARCH_TEXT_COLOR_LABEL"
+					description="TPL_SIMPLI_SEARCH_TEXT_COLOR_DESC" />
+
+				<!-- Footer color -->
+				<field type="legend" icon="bars"
+					label="TPL_SIMPLI_CUSTOM_STYLE_FOOTER_GROUP"
+					description1="TPL_SIMPLI_CUSTOM_STYLE_FOOTER_GROUP_DESC" />
+				<field name="styleFooterBgColor" class="" type="color" default="#fff"
+					label="TPL_SIMPLI_FOOTER_BG_COLOR_LABEL"
+					description="TPL_SIMPLI_FOOTER_BG_COLOR_DESC" />
+				<field name="styleFooterBorderColor" class="" type="color" default="#e0e0e0"
+					label="TPL_SIMPLI_FOOTER_BORDER_COLOR_LABEL"
+					description="TPL_SIMPLI_FOOTER_BORDER_COLOR_DESC" />
+				<field name="styleFooterTextColor" class="" type="color" default="#909090"
+					label="TPL_SIMPLI_FOOTER_TEXT_COLOR_LABEL"
+					description="TPL_SIMPLI_FOOTER_TEXT_COLOR_DESC" />
+				<field name="styleFooterLinkColor" class="" type="color" default="#3498db"
+					label="TPL_SIMPLI_FOOTER_LINK_COLOR_LABEL"
+					description="TPL_SIMPLI_FOOTER_LINK_COLOR_DESC" />
+				<field name="styleFooterLinkHoverColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_FOOTER_LINK_HOVER_COLOR_LABEL"
+					description="TPL_SIMPLI_FOOTER_LINK_HOVER_COLOR_DESC" />
+				<field name="styleFooterMenuColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_FOOTER_MENU_COLOR_LABEL"
+					description="TPL_SIMPLI_FOOTER_MENU_COLOR_DESC" />
+				<field name="styleFooterMenuHoverColor" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_FOOTER_MENU_HOVER_COLOR_LABEL"
+					description="TPL_SIMPLI_FOOTER_MENU_HOVER_COLOR_DESC" />
+
+
+				<!-- Module styles -->
+				<field type="legend" icon="cubes"
+					label="TPL_SIMPLI_CUSTOM_STYLE_MODULES_GROUP"
+					description1="TPL_SIMPLI_CUSTOM_STYLE_MODULES_GROUP_DESC" />
+				<!-- Style 1 -->
+				<field type="legend" 
+					label="TPL_SIMPLI_CUSTOM_STYLE_MODULES_STYLE_1_GROUP" subgroup="1" />
+				<field name="styleModuleColor_1" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_MODULE_STYLE_1_COLOR_LABEL"
+					description="TPL_SIMPLI_MODULE_STYLE_1_COLOR_DESC" />
+				<field name="styleModuleBg_1" class="" type="color" default="#FFFFFF"
+					label="TPL_SIMPLI_MODULE_STYLE_1_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_MODULE_STYLE_1_BACKGROUND_DESC" />
+				<field name="styleModuleModules_1" class="" type="textarea" default=""
+					label="TPL_SIMPLI_MODULE_STYLE_1_MODULES_LABEL"
+					description="TPL_SIMPLI_MODULE_STYLE_1_MODULES_DESC" />
+				
+				<!-- Style 2 -->
+				<field type="legend" 
+					label="TPL_SIMPLI_CUSTOM_STYLE_MODULES_STYLE_2_GROUP" subgroup="1" />
+				<field name="styleModuleColor_2" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_MODULE_STYLE_2_COLOR_LABEL"
+					description="TPL_SIMPLI_MODULE_STYLE_2_COLOR_DESC" />
+				<field name="styleModuleBg_2" class="" type="color" default="#FFFFFF"
+					label="TPL_SIMPLI_MODULE_STYLE_2_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_MODULE_STYLE_2_BACKGROUND_DESC" />
+				<field name="styleModuleModules_2" class="" type="textarea" default=""
+					label="TPL_SIMPLI_MODULE_STYLE_2_MODULES_LABEL"
+					description="TPL_SIMPLI_MODULE_STYLE_2_MODULES_DESC" />
+				
+				<!-- Style 3 -->
+				<field type="legend" 
+					label="TPL_SIMPLI_CUSTOM_STYLE_MODULES_STYLE_3_GROUP" subgroup="1" />
+				<field name="styleModuleColor_3" class="" type="color" default="#303030"
+					label="TPL_SIMPLI_MODULE_STYLE_3_COLOR_LABEL"
+					description="TPL_SIMPLI_MODULE_STYLE_3_COLOR_DESC" />
+				<field name="styleModuleBg_3" class="" type="color" default="#FFFFFF"
+					label="TPL_SIMPLI_MODULE_STYLE_3_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_MODULE_STYLE_3_BACKGROUND_DESC" />
+				<field name="styleModuleModules_3" class="" type="textarea" default=""
+					label="TPL_SIMPLI_MODULE_STYLE_3_MODULES_LABEL"
+					description="TPL_SIMPLI_MODULE_STYLE_3_MODULES_DESC" />
+
+
+				<field type="legend" icon="file-text-o"
+					label="TPL_SIMPLI_PRESET_GROUP" class="preset" />
+				<field type="preset" class="preset" name="stylepresets" group="styles" label="TPL_SIMPLI_PRESET_LABEL" description="TPL_SIMPLI_PRESET_DESC" />					
+
+			</fieldset>
+
+
+			<fieldset name="layouts" addfieldpath="/templates/ja_simpli/html/field">
+				<!-- Position configuration -->
+
+				<field type="tplhelper" name="layout-preview" task="asset" js="layout" css="layout" />
+
+				<field type="legend" icon="gear"
+					label="TPL_SIMPLI_LAYOUT_GENERAL_GROUP" expend="1" />
+				<field name="layoutContainer" class="btn-group btn-group-yesno" type="radio" default="1"
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+
+				<!-- Header -->
+				<field type="legend" icon="h-square"
+					label="TPL_SIMPLI_LAYOUT_HEADER_GROUP" />
+
+				<field type="legend" name="layoutEnable_header"
+					label="TPL_SIMPLI_LAYOUT_HEADER_GROUP" subgroup="1" expend="all" enabler="top" />
+
+				<field name="layoutContainer_header" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="layoutBackground_header" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />				
+				<field name="layoutSticky_header" class="btn-group btn-group-yesno" type="radio" default="0"
+					label="TPL_SIMPLI_LAYOUT_STICKY_LABEL"
+					description="TPL_SIMPLI_LAYOUT_STICKY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<!-- Header Left -->
+				<field type="legend" 
+					label="TPL_SIMPLI_LAYOUT_HEADER_LEFT_GROUP" subgroup="1" expend="all" />
+				<field name="layoutWidth_header_left" class="" type="list" default="3"
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+
+				<!-- Header Right -->
+				<field type="legend" name="layoutEnable_header_right"
+					label="TPL_SIMPLI_LAYOUT_HEADER_RIGHT_GROUP" subgroup="1" expend="all" enabler="1" />
+				
+				<field name="layoutPos_header_right" class="" type="ModulePosition" default="banner-top"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_header_right" class="" type="list" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC">
+					<option value="">auto</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="12">12</option>
+				</field>
+				<field name="extraClass_header_right" class="" type="inputbox" default=""
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+		
+
+				<!-- Main Navigation -->
+				<field type="legend" icon="ellipsis-v"
+					label="TPL_SIMPLI_LAYOUT_NAV_GROUP" />
+
+				<field type="legend" name="layoutEnable_nav"
+					label="TPL_SIMPLI_LAYOUT_NAV_GROUP" subgroup="1" expend="all" enabler="top" />
+
+				<field name="layoutContainer_nav" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="layoutBackground_nav" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />				
+				<field name="layoutSticky_nav" class="btn-group btn-group-yesno" type="radio" default="0"
+					label="TPL_SIMPLI_LAYOUT_STICKY_LABEL"
+					description="TPL_SIMPLI_LAYOUT_STICKY_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+
+				<!-- Nav Left -->
+				<field type="legend" 
+					label="TPL_SIMPLI_LAYOUT_NAV_LEFT_GROUP" subgroup="1" expend="all" />
+				<field name="layoutPos_nav_left" class="" type="ModulePosition" default="position-1"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_nav_left" class="" type="list" default="9"
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+
+				<!-- Nav Right -->
+				<field type="legend" name="layoutEnable_nav_right" 
+					label="TPL_SIMPLI_LAYOUT_NAV_RIGHT_GROUP" subgroup="1" expend="all" enabler="1"/>
+				<field name="layoutPos_nav_right" class="" type="ModulePosition" default="position-0"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_nav_right" class="" type="list" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC">
+					<option value="">auto</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</field>
+
+
+				<!-- Top Positions -->
+				<field type="legend" icon="bars"
+					label="TPL_SIMPLI_LAYOUT_TOP_GROUP" />
+
+				<!-- Top 1 -->
+				<field type="legend" name="layoutEnable_top_1"
+					label="TPL_SIMPLI_LAYOUT_TOP_1_GROUP" subgroup="1" enabler="1" />
+				<field name="layoutName_top_1" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_NAME_LABEL"
+					description="TPL_SIMPLI_LAYOUT_NAME_DESC" />
+				<field name="layoutPos_top_1" class="" type="ModulePosition" default="top-1"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_top_1" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC" />
+				<field name="layoutClass_top_1" class="" type="classes" default="" multiple="1"
+					label="TPL_SIMPLI_LAYOUT_CLASS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CLASS_DESC" />
+				<field name="layoutTitle_top_1" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_TITLE_LABEL"
+					description="TPL_SIMPLI_LAYOUT_TITLE_DESC" />
+				<field name="layoutDesc_top_1" class="" type="textarea" default=""
+					label="TPL_SIMPLI_LAYOUT_DESC_LABEL"
+					description="TPL_SIMPLI_LAYOUT_DESC_DESC" />
+				<field name="layoutContainer_top_1" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="layoutBackground_top_1" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />
+
+				<!-- Top 2 -->
+				<field type="legend" name="layoutEnable_top_2" 
+					label="TPL_SIMPLI_LAYOUT_TOP_2_GROUP" subgroup="1" enabler="1" />
+				<field name="layoutName_top_2" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_NAME_LABEL"
+					description="TPL_SIMPLI_LAYOUT_NAME_DESC" />
+				<field name="layoutPos_top_2" class="" type="ModulePosition" default="top-2"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_top_2" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC" />
+				<field name="layoutClass_top_2" class="" type="classes" default="" multiple="1"
+					label="TPL_SIMPLI_LAYOUT_CLASS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CLASS_DESC" />
+				<field name="layoutTitle_top_2" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_TITLE_LABEL"
+					description="TPL_SIMPLI_LAYOUT_TITLE_DESC" />
+				<field name="layoutDesc_top_2" class="" type="textarea" default=""
+					label="TPL_SIMPLI_LAYOUT_DESC_LABEL"
+					description="TPL_SIMPLI_LAYOUT_DESC_DESC" />
+				<field name="layoutContainer_content" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="layoutBackground_top_2" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />				
+
+				<!-- Top 3 -->
+				<field type="legend" name="layoutEnable_top_3" 
+					label="TPL_SIMPLI_LAYOUT_TOP_3_GROUP" subgroup="1" enabler="1" />
+				<field name="layoutName_top_3" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_NAME_LABEL"
+					description="TPL_SIMPLI_LAYOUT_NAME_DESC" />
+				<field name="layoutPos_top_3" class="" type="ModulePosition" default="top-3"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_top_3" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC" />
+				<field name="layoutClass_top_3" class="" type="classes" default="" multiple="1"
+					label="TPL_SIMPLI_LAYOUT_CLASS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CLASS_DESC" />
+				<field name="layoutTitle_top_3" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_TITLE_LABEL"
+					description="TPL_SIMPLI_LAYOUT_TITLE_DESC" />
+				<field name="layoutDesc_top_3" class="" type="textarea" default=""
+					label="TPL_SIMPLI_LAYOUT_DESC_LABEL"
+					description="TPL_SIMPLI_LAYOUT_DESC_DESC" />
+				<field name="layoutContainer_top_3" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="layoutBackground_top_3" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />	
+
+
+				<!-- Top 4 -->
+				<field type="legend" name="layoutEnable_top_4" 
+					label="TPL_SIMPLI_LAYOUT_TOP_4_GROUP" subgroup="1" enabler="1" />
+				<field name="layoutName_top_4" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_NAME_LABEL"
+					description="TPL_SIMPLI_LAYOUT_NAME_DESC" />
+				<field name="layoutPos_top_4" class="" type="ModulePosition" default="top-4"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_top_4" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC" />
+				<field name="layoutClass_top_4" class="" type="classes" default="" multiple="1"
+					label="TPL_SIMPLI_LAYOUT_CLASS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CLASS_DESC" />
+				<field name="layoutTitle_top_4" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_TITLE_LABEL"
+					description="TPL_SIMPLI_LAYOUT_TITLE_DESC" />
+				<field name="layoutDesc_top_4" class="" type="textarea" default=""
+					label="TPL_SIMPLI_LAYOUT_DESC_LABEL"
+					description="TPL_SIMPLI_LAYOUT_DESC_DESC" />
+				<field name="layoutContainer_top_4" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="layoutBackground_top_4" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />		
+
+			
+				<!-- Main Content -->
+				<field type="legend" icon="columns"
+					label="TPL_SIMPLI_LAYOUT_CONTENT_GROUP" />
+
+				<field type="legend" name="layoutEnable_content" 
+					label="TPL_SIMPLI_LAYOUT_CONTENT_GROUP" subgroup="1" enabler="top" />
+				<field name="layoutPosition_content" class="" type="list" default="left"
+					label="TPL_SIMPLI_LAYOUT_POSITION_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POSITION_DESC">
+					<option value="left">TPL_SIMPLI_LEFT_VALUE</option>
+					<option value="right">TPL_SIMPLI_RIGHT_VALUE</option>
+				</field>
+				<field name="layoutContainer_content" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="layoutBackground_content" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />				
+
+				<!-- Column 1 -->
+				<field type="legend" name="layoutEnable_col_1" 
+					label="TPL_SIMPLI_LAYOUT_COLUMN_1_GROUP" subgroup="1" expend="all" enabler="1" />
+				<field name="layoutPos_col_1" class="" type="ModulePosition" default="position-7"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_col_1" class="" type="list" default="3"
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</field>
+
+				<!-- Column 2 -->
+				<field type="legend" name="layoutEnable_col_2" 
+					label="TPL_SIMPLI_LAYOUT_COLUMN_2_GROUP" subgroup="1" expend="all" enabler="1" />				
+				<field name="layoutPos_col_2" class="" type="ModulePosition" default="position-5"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_col_2" class="" type="list" default="3"
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</field>
+				
+
+				<!-- Bottom Positions -->
+				<field type="legend" icon="bars"
+					label="TPL_SIMPLI_LAYOUT_BOT_GROUP" />
+
+				<!-- Bottom 1 -->
+				<field type="legend" name="layoutEnable_bot_1" 
+					label="TPL_SIMPLI_LAYOUT_BOT_1_GROUP" subgroup="1" enabler="1" />
+				<field name="layoutName_bot_1" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_NAME_LABEL"
+					description="TPL_SIMPLI_LAYOUT_NAME_DESC" />
+				<field name="layoutPos_bot_1" class="" type="ModulePosition" default="bot-1"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_bot_1" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC" />
+				<field name="layoutClass_bot_1" class="" type="classes" default="" multiple="1"
+					label="TPL_SIMPLI_LAYOUT_CLASS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CLASS_DESC" />
+				<field name="layoutTitle_bot_1" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_TITLE_LABEL"
+					description="TPL_SIMPLI_LAYOUT_TITLE_DESC" />
+				<field name="layoutDesc_bot_1" class="" type="textarea" default=""
+					label="TPL_SIMPLI_LAYOUT_DESC_LABEL"
+					description="TPL_SIMPLI_LAYOUT_DESC_DESC" />
+				<field name="layoutContainer_bot_1" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="layoutBackground_bot_1" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />				
+
+
+				<!-- Bottom 2 -->
+				<field type="legend" name="layoutEnable_bot_2" 
+					label="TPL_SIMPLI_LAYOUT_BOT_2_GROUP" subgroup="1" enabler="1" />
+				<field name="layoutName_bot_2" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_NAME_LABEL"
+					description="TPL_SIMPLI_LAYOUT_NAME_DESC" />
+				<field name="layoutPos_bot_2" class="" type="ModulePosition" default="bot-2"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_bot_2" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC" />
+				<field name="layoutClass_bot_2" class="" type="classes" default="" multiple="1"
+					label="TPL_SIMPLI_LAYOUT_CLASS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CLASS_DESC" />
+				<field name="layoutTitle_bot_2" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_TITLE_LABEL"
+					description="TPL_SIMPLI_LAYOUT_TITLE_DESC" />
+				<field name="layoutDesc_bot_2" class="" type="textarea" default=""
+					label="TPL_SIMPLI_LAYOUT_DESC_LABEL"
+					description="TPL_SIMPLI_LAYOUT_DESC_DESC" />
+				<field name="layoutContainer_bot_2" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="layoutBackground_bot_2" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />				
+
+
+				<!-- Bottom 3 -->
+				<field type="legend" name="layoutEnable_bot_3" 
+					label="TPL_SIMPLI_LAYOUT_BOT_3_GROUP" subgroup="1" enabler="1" />
+				<field name="layoutName_bot_3" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_NAME_LABEL"
+					description="TPL_SIMPLI_LAYOUT_NAME_DESC" />
+				<field name="layoutPos_bot_3" class="" type="ModulePosition" default="bot-3"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_bot_3" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC" />
+				<field name="layoutClass_bot_3" class="" type="classes" default="" multiple="1"
+					label="TPL_SIMPLI_LAYOUT_CLASS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CLASS_DESC" />
+				<field name="layoutTitle_bot_3" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_TITLE_LABEL"
+					description="TPL_SIMPLI_LAYOUT_TITLE_DESC" />
+				<field name="layoutDesc_bot_3" class="" type="textarea" default=""
+					label="TPL_SIMPLI_LAYOUT_DESC_LABEL"
+					description="TPL_SIMPLI_LAYOUT_DESC_DESC" />
+				<field name="layoutContainer_bot_3" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="layoutBackground_bot_3" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />
+
+
+				<!-- Bottom 4 -->
+				<field type="legend" name="layoutEnable_bot_4" 
+					label="TPL_SIMPLI_LAYOUT_BOT_4_GROUP" subgroup="1" enabler="1" />
+				<field name="layoutName_bot_4" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_NAME_LABEL"
+					description="TPL_SIMPLI_LAYOUT_NAME_DESC" />
+				<field name="layoutPos_bot_4" class="" type="ModulePosition" default="bot-3"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_bot_4" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC" />
+				<field name="layoutClass_bot_4" class="" type="classes" default="" multiple="1"
+					label="TPL_SIMPLI_LAYOUT_CLASS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CLASS_DESC" />
+				<field name="layoutTitle_bot_4" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_TITLE_LABEL"
+					description="TPL_SIMPLI_LAYOUT_TITLE_DESC" />
+				<field name="layoutDesc_bot_4" class="" type="textarea" default=""
+					label="TPL_SIMPLI_LAYOUT_DESC_LABEL"
+					description="TPL_SIMPLI_LAYOUT_DESC_DESC" />
+				<field name="layoutContainer_bot_4" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="layoutBackground_bot_4" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />						
+
+
+				<!-- Footer -->
+				<field type="legend" icon="sliders"
+					label="TPL_SIMPLI_LAYOUT_FOOTER_GROUP" />
+				<field type="legend" name="layoutEnable_footer"
+					label="TPL_SIMPLI_LAYOUT_FOOTER_GROUP" subgroup="1" enabler="top" />	
+				<field name="layoutPos_footer" class="" type="ModulePosition" default="footer"
+					label="TPL_SIMPLI_LAYOUT_POS_LABEL"
+					description="TPL_SIMPLI_LAYOUT_POS_DESC" />
+				<field name="layoutWidth_footer" class="" type="text" default=""
+					label="TPL_SIMPLI_LAYOUT_WIDTH_LABEL"
+					description="TPL_SIMPLI_LAYOUT_WIDTH_DESC" />
+				<field name="layoutContainer_footer" class="btn-group btn-group-yesno" type="radio" default=""
+					label="TPL_SIMPLI_LAYOUT_CONTAINER_LABEL"
+					description="TPL_SIMPLI_LAYOUT_CONTAINER_DESC">
+					<option value="">JGLOBAL_USE_GLOBAL</option>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="layoutBackground_footer" class="" type="media" default=""
+					label="TPL_SIMPLI_LAYOUT_BACKGROUND_LABEL"
+					description="TPL_SIMPLI_LAYOUT_BACKGROUND_DESC" />				
+
+
+				<field type="legend" icon="file-o"
+					label="TPL_SIMPLI_PRESET_GROUP" />
+				<field type="preset" name="layoutpresets" group="layouts" label="TPL_SIMPLI_PRESET_LABEL" description="TPL_SIMPLI_PRESET_DESC" />					
+			</fieldset>
+
+
+			<fieldset name="advanced">
+
+				<field type="legend" icon="info-circle"
+					label="TPL_SIMPLI_SITE_INFO_GROUP" extend="1" />
+				<field name="advancedSiteEnable" class="btn-group btn-group-yesno group-enabler group-overwrite-default" type="radio" default="0"
+					label="TPL_SIMPLI_OVERWRITE_LABEL"
+					description="TPL_SIMPLI_OVERWRITE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>				
+				<field name="advancedSiteName"  type="text" default=""
+					label="JGLOBAL_TITLE"
+					description="JFIELD_ALT_PAGE_TITLE_LABEL"
+					filter="string" />
+				<field name="advancedSiteSlogan"  type="text" default=""
+					label="JGLOBAL_DESCRIPTION"
+					description="JGLOBAL_SUBHEADING_DESC"
+					filter="string" />
+
+
+				<field type="legend" icon="code"
+					label="TPL_SIMPLI_CUSTOM_CODE_GROUP" />
+
+				<field name="advancedCodeEnable" type="legend" subgroup="1"
+					label="TPL_SIMPLI_CUSTOM_CODE_GROUP" enabler="top" />
+
+				<field name="advancedCodeAfterHead" class="" type="textarea" default=""
+				  label="TPL_SIMPLI_AFTER_HEAD_LABEL"
+				  description="TPL_SIMPLI_AFTER_HEAD_DESC" rows="10" cols="80" filter="raw" />
+
+				<field name="advancedCodeBeforeHead" class="" type="textarea" default=""
+				  label="TPL_SIMPLI_BEFORE_HEAD_LABEL"
+				  description="TPL_SIMPLI_BEFORE_HEAD_DESC" rows="10" cols="80" filter="raw" />
+
+				<field name="advancedCodeBeforeBody" class="" type="textarea" default=""
+				  label="TPL_SIMPLI_BEFORE_BODY_LABEL"
+				  description="TPL_SIMPLI_BEFORE_BODY_DESC" rows="10" cols="80" filter="raw" />
+
+				<field name="advancedCodeAfterBody" class="" type="textarea" default=""
+				  label="TPL_SIMPLI_AFTER_BODY_LABEL"
+				  description="TPL_SIMPLI_AFTER_BODY_DESC" rows="10" cols="80" filter="raw" />
+
+
+			</fieldset>
+
+		</fields>
+
+	</config>
+</extension>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="config" label="COM_ZMAXLOGIN_WEIXINSETTING" description="COM_ZMAXLOGIN_WEIXINSETTING_DESC">
+		<field name="weixin_appid" 
+			   type="text" 
+			   default=""
+			   label="COM_ZMAXLOGIN_WEIXIN_APPID_LABEL"
+			   description="COM_ZMAXLOGIN_WEIXIN_APPID_DESC"
+			   size="40"
+		/>
+		<field name="weixin_appsecret" 
+			   type="text"
+			   default=""
+			   label="COM_ZMAXLOGIN_WEIXIN_APPKEY_LABEL"
+			   description ="COM_ZMAXLOGIN_WEIXIN_APPKEY_DESC"
+			   size="40"
+		/>
+		
+		<field name="weixin_callback" 
+			   type="text"
+			   default=""
+			   label="COM_ZMAXLOGIN_WEIXIN_CALLBACK_LABEL"
+			   description ="COM_ZMAXLOGIN_WEIXIN_CALLBACK_DESC"
+			   size="40"
+		/>
+		
+		<field name="weixin_scope" 
+			   type="list"
+			   default="get_user_info"
+			   label="COM_ZMAXLOGIN_WEIXIN_SCOPE_LABEL"
+			   description ="COM_ZMAXLOGIN_WEIXIN_SCOPE_DESC"
+		>
+			<option value="get_user_info">get_user_info</option>
+			<option value="add_share">add_share</option>
+			<option value="list_album">list_album</option>
+			<option value="add_album">add_album</option>
+			<option value="upload_pic">upload_pic</option>
+			<option value="add_topic">add_topic</option>
+			<option value="add_one_blog">add_one_blog</option>
+			<option value="add_weibo">add_weibo</option>
+		</field>
+	</fieldset>
+</form>

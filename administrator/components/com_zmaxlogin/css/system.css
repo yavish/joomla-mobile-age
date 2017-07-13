@@ -1,0 +1,39 @@
+#zmaxlogin {
+    margin: 20%;
+     margin-left:30%;
+}
+
+
+#zmaxlogin {
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#zmaxlogin_body {
+    padding-left: 70px;
+    padding-top: 14px;
+}
+
+
+#zmaxlogin_body #zmax_bind {
+    display: none;
+}
+
+
+#zmax_controller ul li {
+    list-style: outside none none;
+	 margin: 8px;
+}
+
+#zmax_controller input {
+    margin: 6px 7px;
+    padding: 0;
+}
+
+
+#zmax_controller {
+    background: none repeat scroll 0 0 #ebeadf;
+    border-radius: 5px;
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="config" label="COM_ZMAXLOGIN_WEIXINYDSETTING" description="COM_ZMAXLOGIN_WEIXINYDSETTING_DESC">
+		<field name="weixinyd_appid" 
+			   type="text" 
+			   default=""
+			   label="COM_ZMAXLOGIN_WEIXINYD_APPID_LABEL"
+			   description="COM_ZMAXLOGIN_WEIXINYD_APPID_DESC"
+			   size="40"
+		/>
+		<field name="weixinyd_secret" 
+			   type="text" 
+			   default=""
+			   label="COM_ZMAXLOGIN_WEIXINYD_APPSECRET_LABEL"
+			   description="COM_ZMAXLOGIN_WEIXINYD_APPSECRET_DESC"
+			   size="40"
+		/>
+		<field name="weixinyd_scope" 
+			   type="list"
+			   default="nsapi_userinfo"
+			   label="COM_ZMAXLOGIN_WEIXINYD_SCOPE_LABEL"
+			   description ="COM_ZMAXLOGIN_WEIXINYD_SCOPE_DESC"
+		>
+			<option value="snsapi_userinfo">snsapi_userinfo</option>
+			<option value="snsapi_base">snsapi_base</option>
+		</field>
+	</fieldset>
+</form>

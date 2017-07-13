@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.0" method="upgrade">
+        <name>COM_ZMAXCAPTCHA</name>
+        <creationDate>2015-05-28</creationDate>
+        <author>团队</author>
+        <authorEmail>zhang19min88@163.com</authorEmail>
+        <authorUrl>http://www.renrenshidai.com</authorUrl>
+        <copyright>保留所有权利</copyright>
+		<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+        <version>1.0.0</version>
+        <description>
+			本组件为你的Joomla网站提供验证码功能.
+		</description>
+		<scriptfile>script.php</scriptfile>
+		<install> <!--  run on install-->
+			<sql>
+				<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+			</sql>
+		</install>
+		
+		<uninstall>
+			<sql>
+				<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+			</sql>
+		</uninstall>
+		
+		<update>
+			<schemas>
+				<schemapath type="mysql">sql/updates/mysql</schemapath>
+			</schemas>
+		</update>
+		
+		<!-- Site Main File Copy Section -->
+		<files folder="site">
+			<folder>language</folder>
+			<folder>models</folder>
+			<folder>helpers</folder>
+			<file>zmaxcaptcha.php</file>
+			<file>controller.php</file>
+			<file>index.html</file>	
+		</files>
+ 
+        <administration>
+				<!-- Administration Menu Section-->
+		        <menu>COM_ZMAXCAPTCHA_MENU</menu>
+				
+				<!--  Administration Main File Copy Section -->
+				<files folder="admin">
+					<folder>controllers</folder>
+					<folder>language</folder>
+					<folder>libs</folder>
+					<folder>models</folder>
+					<folder>sql</folder>
+					<folder>tables</folder>
+					<folder>views</folder>
+					<folder>images</folder>
+					<folder>extensions</folder>
+					<filename>zmaxcaptcha.php</filename>
+					<filename>controller.php</filename>
+					<filename>config.xml</filename>
+					<filename>index.html</filename>
+				</files>				
+        </administration>
+
+</extension>

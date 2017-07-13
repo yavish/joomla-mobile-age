@@ -1,0 +1,49 @@
+#zmax_login .login-greeting {
+    margin: 5px;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+#zmax_login .info  b
+{
+	color: #f89406;
+}
+#zmax_login .info  {
+    margin-bottom: 5px;
+    border: solid 1px #dedede;
+    border-left: solid 5px #f89406;
+    padding: 3px;
+}
+#zmax_login .controller-line {
+    margin: 5px;
+    padding-bottom: 5px;
+}
+#zmax_login ul {
+	list-style:none;
+	margin:0px;
+}
+#zmax_login #other_oauth label {
+    border-bottom: solid 1px #dedede;
+    padding: 3px;
+}
+.icon ul li {
+margin: 6px;
+}
+#zmaxlogin_userimage img {
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+#zmax_login.round .icon img {
+    height: 45px;
+    width: 45px;
+}
+.round .icon ul li {
+	display:inline;
+	float:left;
+	margin:2px;
+}
+.round .icon ul::after {
+    clear: both;
+    content: " ";
+    display: block;
+}

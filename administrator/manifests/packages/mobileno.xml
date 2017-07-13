@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+    <name>Authentication - Mobile Number</name>
+    <creationDate>March 2011</creationDate>
+    <packagename>mobileno</packagename>
+    <version>2.3.1</version>
+    <url>http://www.renrenshidai.com</url>
+    <author>yavish wang</author>
+    <authorEmail>auth_email@renrenshidai.com</authorEmail>
+    <authorUrl>http://www.renrenshidai.com</authorUrl>
+    <description>Authentication - Mobile Number , authentication and system plugins</description>
+    <files folder="packages">
+        <file type="plugin" id="mobileno" client="system">plg_sys_mobileno-2.3.1.zip</file>
+        <file type="plugin" id="mobileno" client="authentication">plg_auth_mobileno-2.3.1.zip</file>
+    </files>
+</extension>

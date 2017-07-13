@@ -1,0 +1,50 @@
+stylePreview: 
+styleBgColor: #fff
+styleTextColor: #101010
+styleLinkColor: #3498db
+styleLinkHoverColor: #303030
+styleGoogleFonts: PT Sans:400,400italic,700,700italic\nIndie Flower
+styleBodyFont: PT Sans
+styleBodyFontSize: 16px
+styleBodyFontWeight: 400
+styleLineHeight: 1.4
+styleHeadingFont: PT Sans
+styleLogoImage: 
+styleLogoWidth: 205px
+styleLogoHeight: 90px
+styleHeaderBgColor: #fff
+styleHeaderBorderColor: #e0e0e0
+styleHeaderTextColor: #101010
+styleHeaderLinkColor: #101010
+styleHeaderLinkHoverColor: #3498db
+styleMenuBgColor: #fff
+styleMenuBorderColor: #eee
+styleMenuColor: #303030
+styleMenuHoverColor: #303030
+styleMenuActiveColor: #303030
+styleMenuBorderHoverColor: #303030
+styleSubnavBgColor: #fff
+styleSubnavTextColor: #fff
+styleSubnavHoverBgColor: #303030
+styleSubnavHoverColor: #fff
+styleCollapseMenuColor: #303030
+styleCollapseMenuHoverColor: #303030
+styleCollapseActiveColor: #004597
+styleSearchBgColor: #303030
+styleSearchTextColor: #e0e0e0
+styleFooterBgColor: #fff
+styleFooterBorderColor: #e0e0e0
+styleFooterTextColor: #909090
+styleFooterLinkColor: #3498db
+styleFooterLinkHoverColor: #303030
+styleFooterMenuColor: #303030
+styleFooterMenuHoverColor: #303030
+styleModuleColor_1: #303030
+styleModuleBg_1: #FFFFFF
+styleModuleModules_1: 
+styleModuleColor_2: #303030
+styleModuleBg_2: #FFFFFF
+styleModuleModules_2: 
+styleModuleColor_3: #303030
+styleModuleBg_3: #FFFFFF
+styleModuleModules_3: 

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>ZMAXLOGIN</name>
+	<author>ZMAX团队</author>
+	<creationDate>2015-01-21</creationDate>
+	<copyright>南宁市程序人软件科技有限责任公司保留所有权利！</copyright>
+	<license>GNU</license>
+	<authorEmail>zhang19min88@163.com</authorEmail>
+	<authorUrl>www.zmax99.com</authorUrl>
+	<version>3.0.0</version>
+	<description>MOD_ZMAXLOGIN_DESC</description>
+	<files>
+		<filename module="mod_zmaxlogin">mod_zmaxlogin.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>fields</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic"
+					 addfieldpath="/modules/mod_zmaxlogin/fields">
+				<field 
+					name="userimage"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_ZMAXLOGIN_SHOW_USERIMAGE_LABEL"
+					description="MOD_ZMAXLOGIN_SHOW_USERIMAGE_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field 
+					name="greeting"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_ZMAXLOGIN_SHOW_GREETING_LABEL"
+					description="MOD_ZMAXLOGIN_SHOW_GREETING_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field 
+					name="userinfolink"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_ZMAXLOGIN_SHOW_USERINFOLINK_LABEL"
+					description="MOD_ZMAXLOGIN_SHOW_USERINFOLINK_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field 
+					name="otherloginlabel"
+					type="text"
+					class="btn-group btn-group-yesno"
+					default="MOD_LOGIN_OTHER_WAYS"
+					label="MOD_ZMAXLOGIN_OTHERLOGIN_LABEL"
+					description="MOD_ZMAXLOGIN_OTHERLOGIN_DESC"
+					/>
+				
+				
+				<field 
+					name="joomlalogin"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_ZMAXLOGIN_SHOW_JOOMLALOGIN_LABEL"
+					description="MOD_ZMAXLOGIN_SHOW_JOOMLALOGIN_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field 
+					name="window_style"
+					type="list"
+					class="btn-group btn-group-yesno"
+					default="new_window"
+					label="MOD_ZMAXLOGIN_WINDOW_STYLE_LABEL"
+					description="MOD_ZMAXLOGIN_WINDOW_STYLE_DESC"
+					>
+						<option value="same_window">OPTION_WINDOW_STYLE_SAME_WINDOW</option>
+						<option value="new_window">OPTION_WINDOW_STYLE_NEW_WINDOW</option>
+				</field>
+				
+				<field 
+					name="window_width"
+					type="text"
+					class=""
+					default="700"
+					label="MOD_LOGIN_WINDOW_WIDTH_LABEL"
+					description="MOD_LOGIN_WINDOW_WIDTH_DESC"
+				/>
+				<field 
+					name="window_height"
+					type="text"
+					class=""
+					default="400"
+					label="MOD_LOGIN_WINDOW_HEIGHT_LABEL"
+					description="MOD_LOGIN_WINDOW_HEIGHT_DESC"
+				/>
+				
+				<field 
+					name="window_position_x"
+					type="text"
+					class=""
+					default="700"
+					label="MOD_LOGIN_WINDOW_POSITION_X_LABEL"
+					description="MOD_LOGIN_WINDOW_POSITION_X_DESC"
+				/>
+				
+				<field 
+					name="window_position_y"
+					type="text"
+					class=""
+					default="320"
+					label="MOD_LOGIN_WINDOW_POSITION_Y_LABEL"
+					description="MOD_LOGIN_WINDOW_POSITION_Y_DESC"
+				/>
+				<field name="image_style"
+						type="list"
+						label="MOD_LOGIN_IMAGE_STYLE_LABEL"
+						description="MOD_LOGIN_IMAGE_STYLE_LABEL"
+						default="round"
+						onchange="changePic()"
+						>
+					<option value="round">MOD_LOGIN_IMAGE_STYLE_ROUND</option>
+					<option value="block">MOD_LOGIN_IMAGE_STYLE_BLOCK</option>
+				</field>
+				<field name="preview"
+					   type="preview"
+					   label="MOD_LOGIN_PREVIEW_LABEL"
+					   desc="MOD_LOGIN_PREVIEW_DESC"
+					   default="round"
+					/>
+			</fieldset>
+			
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+			<server type="extension" priority="1" name="ZMAX第三方登录模块" >http://www.zmax99.com/autoupdate/auto-update-mod-zmaxlogin.xml</server>
+	</updateservers>
+</extension>

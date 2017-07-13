@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="authentication" method="upgrade">
+	<name>PLG_AUTHENTICATION_ZMAXLOGIN</name>
+	<author>min.zhang</author>
+	<creationDate>2014-12-03</creationDate>
+	<copyright>Copyright (C)南宁市程序人软件科技有限责任公司. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>zhang19min88@163.com</authorEmail>
+	<authorUrl>www.zmax99.com</authorUrl>
+	<version>1.0.4</version>
+	<description>PLG_AUTHENTICATION_ZMAXLOGIN_DESC</description>
+	<files>
+		<filename plugin="zmaxlogin">zmaxlogin.php</filename>
+		<folder>language</folder>
+		<filename>index.html</filename>
+	</files>
+	<config>
+	</config>
+	<updateservers>
+			<server type="extension" priority="1" name="ZMAX第三方登录认证插件" >http://www.zmax99.com/autoupdate/auto-update-plg-zmaxlogin.xml</server>
+	</updateservers>
+</extension>

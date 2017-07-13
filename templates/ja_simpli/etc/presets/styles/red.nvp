@@ -1,0 +1,50 @@
+Red Style
+styleBgColor: #ffffff
+styleTextColor: #101010
+styleLinkColor: #3498db
+styleLinkHoverColor: #303030
+styleGoogleFonts: PT+Serif:400,700,700italic,400itali\nPT+Sans:400,400italic,700,700italic
+styleBodyFont: PT Sans
+styleBodyFontSize: 16px
+styleBodyFontWeight: 400
+styleLineHeight: 1.4
+styleHeadingFont: PT Serif
+styleLogoImage: 
+styleLogoWidth: 205px
+styleLogoHeight: 52px
+styleHeaderBgColor: #101010
+styleHeaderBorderColor: #222222
+styleHeaderTextColor: #999999
+styleHeaderLinkColor: #999999
+styleHeaderLinkHoverColor: #ffffff
+styleMenuBgColor: #9f111b
+styleMenuBorderColor: #eeeeee
+styleMenuColor: #ebc6c9
+styleMenuHoverColor: #ffffff
+styleMenuActiveColor: #ffffff
+styleMenuBorderHoverColor: #9f111b
+styleSubnavBgColor: #ffffff
+styleSubnavTextColor: #303030
+styleSubnavHoverBgColor: #303030
+styleSubnavHoverColor: #ffffff
+styleCollapseMenuColor: #303030
+styleCollapseMenuHoverColor: #303030
+styleCollapseActiveColor: #004597
+styleSearchBgColor: #6d0b12
+styleSearchTextColor: #ffffff
+styleFooterBgColor: #ffffff
+styleFooterBorderColor: #e0e0e0
+styleFooterTextColor: #909090
+styleFooterLinkColor: #3498db
+styleFooterLinkHoverColor: #303030
+styleFooterMenuColor: #303030
+styleFooterMenuHoverColor: #303030
+styleModuleColor_1: #303030
+styleModuleBg_1: #ffffff
+styleModuleModules_1: 
+styleModuleColor_2: #303030
+styleModuleBg_2: #ffffff
+styleModuleModules_2: 
+styleModuleColor_3: #303030
+styleModuleBg_3: #ffffff
+styleModuleModules_3: 

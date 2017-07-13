@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="3.7" client="site">
+	<name>Chinese (zh-CN)</name>
+	<version>3.7.100</version>
+	<creationDate>2011-07-20</creationDate>
+	<author>Joomla之门</author>
+	<authorEmail>joomlagate@gmail.com</authorEmail>
+	<authorUrl>http://www.joomlagate.com</authorUrl>
+	<copyright>joomlagate.com</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <description>Joomla 3.7 前台简体中文（Simplified Chinese）语言文件</description>
+	<metadata>
+		<name>Chinese (zh-CN)</name>
+		<nativeName>简体中文</nativeName>
+		<tag>zh-CN</tag>
+		<rtl>0</rtl>
+		<locale>zh_CN.utf8, zh, zho, zhi, zh_CN, zho_CN, zhi_CN,cn,simplified_chinese,chinese_simplified,zhs,zh-hans</locale>
+		<firstDay>1</firstDay>
+		<weekEnd>0,6</weekEnd>
+		<calendar>gregorian</calendar>
+	</metadata>
+	<params />
+</metafile>

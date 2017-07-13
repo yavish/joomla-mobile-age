@@ -1,0 +1,135 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       SIMPLI - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2016 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+
+// --------------------------------------------------
+// BOOTSTRAP COMPONENTS STYLES
+// --------------------------------------------------
+
+
+// TABS AND PILLS
+// -------------
+
+// TABS
+// ----
+// Give the tabs something to sit on
+.nav-tabs {
+  border-bottom: 1px solid @border-color;
+}
+// Make the list-items overlay the bottom border
+.nav-tabs > li {
+  margin-bottom: -1px;
+  margin-right: 4px;
+}
+// Actual tabs (as links)
+.nav-tabs > li > a {
+  color: @textColor;
+  background: transparent;
+  border: 1px solid transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: @baseLineHeight;
+  .border-radius(0);
+  &:hover,
+  &:focus {
+    background: @grayLightest;
+    color: @textColor;
+    border: 1px solid @border-color;
+  }
+}
+// Active state, and it's :hover/:focus to override normal :hover/:focus
+.nav-tabs > .active > a,
+.nav-tabs > .active > a:hover,
+.nav-tabs > .active > a:focus {
+  color: #fff;
+  background-color: @grayDark;
+  border: 1px solid @grayDark;
+  cursor: default;
+}
+
+
+// PILLS
+// -----
+
+// Links rendered as pills
+.nav-pills > li > a {
+  .border-radius(0);
+}
+
+// Active state
+.nav-pills > .active > a,
+.nav-pills > .active > a:hover,
+.nav-pills > .active > a:focus {
+  color: @white;
+  background-color: @linkColor;
+}
+
+
+
+// STACKED NAV
+// -----------
+
+// Tabs
+.nav-tabs.nav-stacked {
+  border-bottom: 0;
+}
+.nav-tabs.nav-stacked > li > a {
+  border: 1px solid transparent;
+  .border-radius(0);
+}
+.nav-tabs.nav-stacked > li:first-child > a {
+  .border-top-radius(0);
+}
+.nav-tabs.nav-stacked > li:last-child > a {
+  .border-bottom-radius(0);
+}
+.nav-tabs.nav-stacked > li > a:hover,
+.nav-tabs.nav-stacked > li > a:focus {
+  border-color: transparent;
+}
+
+// Pills
+.nav-pills.nav-stacked > li > a {
+  margin-bottom: 3px;
+}
+.nav-pills.nav-stacked > li:last-child > a {
+  margin-bottom: 1px; // decrease margin to match sizing of stacked tabs
+}
+
+
+
+
+
+//
+// Wells
+// --------------------------------------------------
+
+// Base class
+.well {
+  min-height: @global-padding;
+  padding: @global-padding;
+  margin-top: @global-padding;  
+  margin-bottom: @global-padding;
+  background-color: @wellBackground;
+  border: 1px solid @border-color;
+  .border-radius(@baseBorderRadius);
+  blockquote {
+    border-color: @border-color;
+  }
+}
+
+// Sizes
+.well-large {
+  padding: @global-padding * 1.5;
+  .border-radius(@borderRadiusLarge);
+}
+.well-small {
+  padding: @global-padding / 2;
+  .border-radius(@borderRadiusSmall);
+}

@@ -1,0 +1,66 @@
+.syscaptchabox {
+    margin-bottom: 5px;
+}
+
+
+
+.syscaptchabox img {
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.zmaxinputbox {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+/*∞¥≈•¿‡*/
+.zmaxbtn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #fff, #e6e6e6);
+    background-repeat: repeat-x;
+    border-color: #bbb #bbb #a2a2a2;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+.zmaxbtn:focus,
+.zmaxbtn:active:focus,
+.zmaxbtn.active:focus,
+.zmaxbtn.focus,
+.zmaxbtn:active.focus,
+.zmaxbtn.active.focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.zmaxbtn:hover,
+.zmaxbtn:focus,
+.zmaxbtn.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.zmaxbtn:active,
+.zmaxbtn.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}

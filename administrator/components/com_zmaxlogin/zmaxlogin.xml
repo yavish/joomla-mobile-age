@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.0" method="upgrade">
+        <name>COM_ZMAXLOGIN</name>
+        <!-- The following elements are optional and free of formatting constraints -->
+        <creationDate>2016-12-02</creationDate>
+        <author>ZMAX团队</author>
+        <authorEmail>zhang19min88@163.com</authorEmail>
+        <authorUrl>http://www.zmax99.com</authorUrl>
+        <copyright>南宁市程序人软件科技有限责任公司保留所有权利。</copyright>
+        <license>License GPL</license>
+        <!--  The version string is recorded in the components table -->
+        <version>3.0.7</version>
+        <!-- The description is optional and defaults to the name -->
+        <description>COM_ZMAXLOGIN_DESC</description>
+		
+		<!-- run install script-->
+		<scriptfile>script.php</scriptfile>
+		
+		<install> <!--  run on install-->
+			<sql>
+				<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+			</sql>
+		</install>
+		
+		<uninstall>
+			<sql>
+				<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+			</sql>
+		</uninstall>
+		
+		<update>
+			<schemas>
+				<schemapath type="mysql">sql/updates/mysql</schemapath>
+			</schemas>
+		</update>
+		
+		<!-- Site Main File Copy Section -->
+		<!-- 
+			注意folder属性：这个属性指定了安装包中需要被copy的目录的名称，下面的代码说明需要copysite目录下的文件
+		-->
+		<media  folder="media">
+			<filename>index.html</filename>
+			<folder>zmaxlogin</folder>
+		</media>
+		
+		<files folder="site">
+			<filename>zmaxlogin.php</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<folder>models</folder>
+			<folder>controllers</folder>
+			<folder>language</folder>
+			<folder>views</folder>
+			<folder>helpers</folder>
+		</files>
+		
+		
+        <administration>
+				<!-- Administration Menu Section-->
+		        <menu>COM_ZMAXLOGIN_MENU</menu>
+				<submenu>
+					<menu link="option=com_zmaxlogin&amp;view=main" view="main">COM_ZMAXLOGIN_SUBMENU_GUIDEPAGE</menu>
+					<menu link="option=com_zmaxlogin&amp;view=users" view="users">COM_ZMAXLOGIN_SUBMENU_USERS</menu>
+					<menu link="option=com_zmaxlogin&amp;view=install" view="install">COM_ZMAXLOGIN_SUBMENU_INSTALL_EXTENSION</menu>
+					<menu link="option=com_zmaxlogin&amp;view=extensions" view="extensions">COM_ZMAXLOGIN_SUBMENU_EXTENSION_MANAGER</menu>
+				
+				</submenu>
+				
+				<!--  Administration Main File Copy Section -->
+				<files folder="admin">
+					<folder>language</folder>
+					<folder>views</folder>
+					<folder>sql</folder>
+					<folder>libs</folder>
+					<folder>views</folder>
+					<folder>extensions</folder>
+					<folder>tables</folder>
+					<folder>helpers</folder>
+					<folder>images</folder>
+					<folder>models</folder>
+					<folder>plugins</folder>
+					<folder>controllers</folder>
+					<folder>css</folder>					
+					<filename>zmaxlogin.php</filename>
+					<filename>controller.php</filename>
+					<filename>index.html</filename>
+					<filename>config.xml</filename>
+				</files>
+        </administration>
+		
+		<config>
+		</config>
+		<updateservers>
+			<server type="extension" priority="1" name="ZMAX第三方登录系统" >http://www.zmax99.com/autoupdate/auto-update-com-zmaxlogin-platform.xml</server>
+		</updateservers>
+</extension>

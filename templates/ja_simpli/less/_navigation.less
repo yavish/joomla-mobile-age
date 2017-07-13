@@ -1,0 +1,480 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       SIMPLI - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2016 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+
+
+// 
+// GENERIC STYLES
+// -------------------------------------------------------
+
+// The dropdown menu (ul)
+// ----------------------
+
+// The Dropdown
+.nav-child {
+  .dropdown-menu();
+}
+
+.dropdown-menu,
+.nav .nav-child {
+  min-width: @dropdownWidth;
+  padding: 0;
+  margin: 0;
+  background-color: @dropdownBackground;
+  border: 1px solid @dropdownBorder;
+  font-size: @fontSizeSmall;
+  .border-radius(0);
+  .flatBS();
+  box-shadow: 3px 3px 0 rgba(0,0,0, 0.1);
+
+  // Links within the dropdown menu
+  > li > a {
+    padding: (@global-padding / 4) (@global-padding / 2);
+    color: @dropdownLinkColor;
+    // Icons
+    span {
+      margin-right: (@global-padding / 2);
+      position: relative;
+      bottom: -2px;
+    }
+  }
+}
+
+// Hover/Focus state
+// -----------
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a,
+.nav .nav-child > li:hover > a,
+.nav .nav-child > li:focus > a {
+  background: @dropdownLinkBackgroundHover;
+  color: @dropdownLinkColorHover;
+  text-decoration: none;
+  .flatBS();
+}
+
+// Active state
+// ------------
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.nav .nav-child > .active:hover > a,
+.nav .nav-child > .active:focus > a {
+  .flatBS();
+}
+
+
+// 
+// MAIN NAVIGATION
+// -------------------------------------------------------
+
+#mainnav {
+  background: @navbarBackground;
+  color: contrast(@navbarBackground);
+  // Reset default BS Styles
+  border: 0;
+  border-bottom: 1px solid @border-color;
+  margin: 0;
+  padding: 0;
+
+  // Styles on Breakpoint
+  @media only screen and (max-width: @grid-float-breakpoint) {
+    background: @grayDark;
+  }
+
+  .navbar-inner {
+    position: relative;
+    background: transparent;
+    // Reset default BS Styles
+    border: 0;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    .flatBS();
+  }
+
+
+  // Toggle Menu in Breakpoint
+  .btn-navbar {
+    background: @grayDark;
+    border: 0;
+    color: @white;
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+    padding: @paddingLarge;
+    height: @navbarHeight;
+
+    .fa {
+      margin-right: 5px;
+    }
+
+    span {
+      // Styles on Breakpoint
+      @media only screen and (max-width: @screen-xs) {
+        display: none;
+      }
+    }
+
+    // Link States
+    &:hover, &:active, &:focus {
+      background: @linkColor;
+      color: contrast(@linkColor);
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+
+  // The Nav
+  // -----------------
+  .nav {
+    > li {
+      // Styles on Desktop
+      @media only screen and (min-width: @grid-float-breakpoint) {
+        padding-right: @global-padding;
+        display: inline-block;
+      }
+    }
+    > li > a,
+    > li > .separator {
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 0 2px;
+      line-height: @navbarHeight;
+      position: relative;
+      display: block;
+      text-shadow: none;
+      &:after {
+        content: '';
+        border-bottom: 0px solid @grayDark;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        transition: ease .2s all;
+      }
+    }
+
+    // Link States
+    > li > a:hover,
+    > li > a:active,
+    > li > a:focus,
+    > li:hover > a,
+    > li:hover > .separator {
+      background: transparent;
+      &:after {
+        border-bottom-width: 5px;
+      }
+    }
+
+    // Active
+    > .active > a,
+    > .active > .separator {
+      .flatBS();
+      &:after {
+        border-bottom-width: 2px;
+      }
+    }
+
+    .badge {
+      background: transparent;
+      border-radius: 0;
+    }
+
+    .badge-hot:before {
+      background-color: @red;
+      border-radius: 2px;
+      color: @white;
+      content: "Hot";
+      display: inline-block;
+      height: 10px;
+      font-size: 9px;
+      font-weight: normal;
+      line-height: 10px;
+      letter-spacing: 1px;
+      padding: 2px 5px;
+      position: absolute;
+      top: 2px;
+      right: -20px;
+      text-transform: uppercase;
+      width: 18px;
+    }
+  }
+
+  // The Nav Dropdown
+  // -----------------
+  .nav {
+
+    // <li> which contains the Dropdown
+    .parent {
+      position: relative;
+      > a,
+      > .separator {
+        padding-right: 20px;
+        &:before {
+          .icon("\f107");
+          position: absolute;
+          right: 3px;
+          top: 1px;
+        }
+      }
+      // Deeper Menus
+      .parent > a,
+      .parent > .separator {
+        &:before {
+          content: "\f105";
+          right: 12px;
+          top: 6px;
+        }
+      }
+    }
+
+    // Add Divider
+    .nav-child > li {
+      border-bottom: 1px dotted @border-color;
+      &:last-child {
+        border-bottom: 0;
+      } 
+    }
+
+    // Trigger Dropdown
+    > li:hover > .nav-child {
+      display: block;
+      left: auto;
+    }
+
+    .nav-child > li:hover > .nav-child {
+      display: block;
+      left: @dropdownWidth - 5px;
+      top: 5px;
+    }
+
+  }
+
+  // Navbar in Small Screen
+  // ---------------------
+  // Styles on Breakpoint
+  @media only screen and (max-width: @grid-float-breakpoint) {
+
+    .nav-collapse {
+      background: @white;
+
+      &.in {
+        padding-bottom: @global-padding;
+      }
+
+      .nav > li {
+        padding-left: @global-padding;
+        padding-right: @global-padding;
+        clear: both;
+      }
+
+      // No Dropdown Menu in Small Screen
+      .nav-child {
+        position: relative;
+        top: 0 !important;
+        left: 0 !important;
+        height: auto;
+        display: block;
+        width: 100%;
+        .box-sizing(border-box);
+        box-shadow: none;
+        border: 1px solid @border-color;
+
+        > li > a {
+          padding: @paddingLarge;
+        }
+
+        // Deepper Menu
+        .nav-child {
+          background: @grayLightest;
+          border: 0;
+        }
+
+        // Deeper Menus Indicator
+        .parent > a,
+        .parent > .separator {
+          &:before {
+            content: "\f107";
+          }
+        }
+
+      }   
+    }
+
+  }
+
+}
+
+
+// 
+// BREADCRUMS
+// -------------------------------------------------------
+.breadcrumb {
+  margin: 0 0 (@global-padding / 4);
+  padding: 0;
+  border-radius: 0;
+  line-height: normal;
+  background: none;
+  font-size: @fontSizeSmall;
+
+  // Hide Breadcrumb on Frontpage
+  .page-featured & {
+    display: none;
+  }
+
+  // Active
+  > .active {
+    color: @gray;
+  }
+
+  // Path
+  .pathway {
+    color: @textColor;
+    font-weight: bold;
+  }
+
+  // Divider
+  .divider {
+    img {
+      .vertical-align();
+      margin-top: 2px;
+    }
+  }
+}
+
+
+
+//
+// PAGINATION (MULTIPLE PAGES)
+// --------------------------------------------------
+.pagination {
+  margin: @global-padding 0 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    .flatBS();
+  }
+
+  ul > li {
+    display: inline-block;
+    margin-right: 2px;
+    > a,
+    > span {
+      border: 1px solid @grayDark;
+      padding: @paddingSmall;
+      text-transform: uppercase;
+      display: block;
+      color: @textColor;
+    }
+    > span {
+      border-color: @border-color;
+      background: @border-color;
+      opacity: .5;
+    }
+    > a {
+    }
+  }
+
+  // Hover state
+  ul > li > a {
+    &:hover,
+    &:focus {
+      background: @grayDark;
+      color: @white;
+    }
+  }
+
+}
+
+
+// Fix for Joomla! Pagination
+.pagination {
+  .clearfix();
+  display: block;
+  // re-defined nested class - joomla structure
+  .pagination {
+    display: inline-block;
+  }
+}
+
+
+// Counter
+// -------
+.counter {
+  display: inline-block;
+  padding: @paddingSmall;
+  background-color: @grayDark;
+  color: #fff;
+  border: 1px solid @grayDark;
+  border-radius: @baseBorderRadius;
+}
+
+
+
+//
+// PAGER PAGINATION
+// --------------------------------------------------
+
+.pager {
+  margin: @baseLineHeight 0;
+  list-style: none;
+  text-align: center;
+  .clearfix();
+
+  li {
+    display: inline;
+  }
+
+  li > a,
+  li > span {
+    display: inline-block;
+    padding: @paddingSmall;
+    background-color: @white;
+    border: 1px solid @grayDark;
+    color: @textColor;
+    .border-radius(0);
+  }
+
+  li > a:hover,
+  li > a:focus {
+    text-decoration: none;
+    background-color: @grayDark;
+    color: @white;
+  }
+
+  .next > a,
+  .next > span {
+    float: right;
+  }
+
+  .previous > a,
+  .previous > span {
+    float: left;
+  }
+
+  .disabled > a,
+  .disabled > a:hover,
+  .disabled > a:focus,
+  .disabled > span {
+    color: @grayLight;
+    background-color: @white;
+    cursor: default;
+  }
+
+  .icon-chevron-left,
+  .icon-chevron-right {
+    font-size: 10px;
+  }
+
+}

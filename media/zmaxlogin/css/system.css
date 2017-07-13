@@ -1,0 +1,17 @@
+@import url(zmaxui/zmaxui.css); 
+
+/**无效输入数字的类*/
+input.zmax-invalid-data {
+    border-color: #e9322d !important;
+    box-shadow: 0 0 6px #f8b9b7 !important;
+}
+  
+
+
+
+
+
+
+
+
+

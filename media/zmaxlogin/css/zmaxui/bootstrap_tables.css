@@ -1,0 +1,281 @@
+.zmaxui table {
+  background-color: transparent;
+}
+.zmaxui caption {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #777777;
+  text-align: left;
+}
+.zmaxui th {
+  text-align: left;
+}
+.zmax-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+.zmax-table > thead > tr > th,
+.zmax-table > tbody > tr > th,
+.zmax-table > tfoot > tr > th,
+.zmax-table > thead > tr > td,
+.zmax-table > tbody > tr > td,
+.zmax-table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+.zmax-table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dddddd;
+}
+.zmax-table > caption + thead > tr:first-child > th,
+.zmax-table > colgroup + thead > tr:first-child > th,
+.zmax-table > thead:first-child > tr:first-child > th,
+.zmax-table > caption + thead > tr:first-child > td,
+.zmax-table > colgroup + thead > tr:first-child > td,
+.zmax-table > thead:first-child > tr:first-child > td {
+  border-top: 0;
+}
+.zmax-table > tbody + tbody {
+  border-top: 2px solid #dddddd;
+}
+.zmax-table .zmax-table {
+  background-color: #ffffff;
+}
+.zmax-table-condensed > thead > tr > th,
+.zmax-table-condensed > tbody > tr > th,
+.zmax-table-condensed > tfoot > tr > th,
+.zmax-table-condensed > thead > tr > td,
+.zmax-table-condensed > tbody > tr > td,
+.zmax-table-condensed > tfoot > tr > td {
+  padding: 5px;
+}
+.zmax-table-bordered {
+  border: 1px solid #dddddd;
+}
+.zmax-table-bordered > thead > tr > th,
+.zmax-table-bordered > tbody > tr > th,
+.zmax-table-bordered > tfoot > tr > th,
+.zmax-table-bordered > thead > tr > td,
+.zmax-table-bordered > tbody > tr > td,
+.zmax-table-bordered > tfoot > tr > td {
+  border: 1px solid #dddddd;
+}
+.zmax-table-bordered > thead > tr > th,
+.zmax-table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.zmax-table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+.zmax-table-hover > tbody > tr:hover {
+  background-color: #f5f5f5;
+}
+.zmaxui table col[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-column;
+}
+.zmaxui table td[class*="col-"],
+.zmaxui table th[class*="col-"] {
+  position: static;
+  float: none;
+  display: table-cell;
+}
+.zmax-table > thead > tr > td.zmax-active,
+.zmax-table > tbody > tr > td.zmax-active,
+.zmax-table > tfoot > tr > td.zmax-active,
+.zmax-table > thead > tr > th.zmax-active,
+.zmax-table > tbody > tr > th.zmax-active,
+.zmax-table > tfoot > tr > th.zmax-active,
+.zmax-table > thead > tr.zmax-active > td,
+.zmax-table > tbody > tr.zmax-active > td,
+.zmax-table > tfoot > tr.zmax-active > td,
+.zmax-table > thead > tr.zmax-active > th,
+.zmax-table > tbody > tr.zmax-active > th,
+.zmax-table > tfoot > tr.zmax-active > th {
+  background-color: #f5f5f5;
+}
+.zmax-table-hover > tbody > tr > td.zmax-active:hover,
+.zmax-table-hover > tbody > tr > th.zmax-active:hover,
+.zmax-table-hover > tbody > tr.zmax-active:hover > td,
+.zmax-table-hover > tbody > tr:hover > .zmax-active,
+.zmax-table-hover > tbody > tr.zmax-active:hover > th {
+  background-color: #e8e8e8;
+}
+.zmax-table > thead > tr > td.zmax-success,
+.zmax-table > tbody > tr > td.zmax-success,
+.zmax-table > tfoot > tr > td.zmax-success,
+.zmax-table > thead > tr > th.zmax-success,
+.zmax-table > tbody > tr > th.zmax-success,
+.zmax-table > tfoot > tr > th.zmax-success,
+.zmax-table > thead > tr.zmax-success > td,
+.zmax-table > tbody > tr.zmax-success > td,
+.zmax-table > tfoot > tr.zmax-success > td,
+.zmax-table > thead > tr.zmax-success > th,
+.zmax-table > tbody > tr.zmax-success > th,
+.zmax-table > tfoot > tr.zmax-success > th {
+  background-color: #dff0d8;
+}
+.zmax-table-hover > tbody > tr > td.zmax-success:hover,
+.zmax-table-hover > tbody > tr > th.zmax-success:hover,
+.zmax-table-hover > tbody > tr.zmax-success:hover > td,
+.zmax-table-hover > tbody > tr:hover > .zmax-success,
+.zmax-table-hover > tbody > tr.zmax-success:hover > th {
+  background-color: #d0e9c6;
+}
+.zmax-table > thead > tr > td.zmax-info,
+.zmax-table > tbody > tr > td.zmax-info,
+.zmax-table > tfoot > tr > td.zmax-info,
+.zmax-table > thead > tr > th.zmax-info,
+.zmax-table > tbody > tr > th.zmax-info,
+.zmax-table > tfoot > tr > th.zmax-info,
+.zmax-table > thead > tr.zmax-info > td,
+.zmax-table > tbody > tr.zmax-info > td,
+.zmax-table > tfoot > tr.zmax-info > td,
+.zmax-table > thead > tr.zmax-info > th,
+.zmax-table > tbody > tr.zmax-info > th,
+.zmax-table > tfoot > tr.zmax-info > th {
+  background-color: #d9edf7;
+}
+.zmax-table-hover > tbody > tr > td.zmax-info:hover,
+.zmax-table-hover > tbody > tr > th.zmax-info:hover,
+.zmax-table-hover > tbody > tr.zmax-info:hover > td,
+.zmax-table-hover > tbody > tr:hover > .zmax-info,
+.zmax-table-hover > tbody > tr.zmax-info:hover > th {
+  background-color: #c4e3f3;
+}
+.zmax-table > thead > tr > td.zmax-warning,
+.zmax-table > tbody > tr > td.zmax-warning,
+.zmax-table > tfoot > tr > td.zmax-warning,
+.zmax-table > thead > tr > th.zmax-warning,
+.zmax-table > tbody > tr > th.zmax-warning,
+.zmax-table > tfoot > tr > th.zmax-warning,
+.zmax-table > thead > tr.zmax-warning > td,
+.zmax-table > tbody > tr.zmax-warning > td,
+.zmax-table > tfoot > tr.zmax-warning > td,
+.zmax-table > thead > tr.zmax-warning > th,
+.zmax-table > tbody > tr.zmax-warning > th,
+.zmax-table > tfoot > tr.zmax-warning > th {
+  background-color: #fcf8e3;
+}
+.zmax-table-hover > tbody > tr > td.zmax-warning:hover,
+.zmax-table-hover > tbody > tr > th.zmax-warning:hover,
+.zmax-table-hover > tbody > tr.zmax-warning:hover > td,
+.zmax-table-hover > tbody > tr:hover > .zmax-warning,
+.zmax-table-hover > tbody > tr.zmax-warning:hover > th {
+  background-color: #faf2cc;
+}
+.zmax-table > thead > tr > td.zmax-danger,
+.zmax-table > tbody > tr > td.zmax-danger,
+.zmax-table > tfoot > tr > td.zmax-danger,
+.zmax-table > thead > tr > th.zmax-danger,
+.zmax-table > tbody > tr > th.zmax-danger,
+.zmax-table > tfoot > tr > th.zmax-danger,
+.zmax-table > thead > tr.zmax-danger > td,
+.zmax-table > tbody > tr.zmax-danger > td,
+.zmax-table > tfoot > tr.zmax-danger > td,
+.zmax-table > thead > tr.zmax-danger > th,
+.zmax-table > tbody > tr.zmax-danger > th,
+.zmax-table > tfoot > tr.zmax-danger > th {
+  background-color: #f2dede;
+}
+.zmax-table-hover > tbody > tr > td.zmax-danger:hover,
+.zmax-table-hover > tbody > tr > th.zmax-danger:hover,
+.zmax-table-hover > tbody > tr.zmax-danger:hover > td,
+.zmax-table-hover > tbody > tr:hover > .zmax-danger,
+.zmax-table-hover > tbody > tr.zmax-danger:hover > th {
+  background-color: #ebcccc;
+}
+.zmax-table-responsive {
+  overflow-x: auto;
+  min-height: 0.01%;
+}
+@media screen and (max-width: 767px) {
+  .zmax-table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #dddddd;
+  }
+  .zmax-table-responsive > .zmax-table {
+    margin-bottom: 0;
+  }
+  .zmax-table-responsive > .zmax-table > thead > tr > th,
+  .zmax-table-responsive > .zmax-table > tbody > tr > th,
+  .zmax-table-responsive > .zmax-table > tfoot > tr > th,
+  .zmax-table-responsive > .zmax-table > thead > tr > td,
+  .zmax-table-responsive > .zmax-table > tbody > tr > td,
+  .zmax-table-responsive > .zmax-table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+  .zmax-table-responsive > .zmax-table-bordered {
+    border: 0;
+  }
+  .zmax-table-responsive > .zmax-table-bordered > thead > tr > th:first-child,
+  .zmax-table-responsive > .zmax-table-bordered > tbody > tr > th:first-child,
+  .zmax-table-responsive > .zmax-table-bordered > tfoot > tr > th:first-child,
+  .zmax-table-responsive > .zmax-table-bordered > thead > tr > td:first-child,
+  .zmax-table-responsive > .zmax-table-bordered > tbody > tr > td:first-child,
+  .zmax-table-responsive > .zmax-table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .zmax-table-responsive > .zmax-table-bordered > thead > tr > th:last-child,
+  .zmax-table-responsive > .zmax-table-bordered > tbody > tr > th:last-child,
+  .zmax-table-responsive > .zmax-table-bordered > tfoot > tr > th:last-child,
+  .zmax-table-responsive > .zmax-table-bordered > thead > tr > td:last-child,
+  .zmax-table-responsive > .zmax-table-bordered > tbody > tr > td:last-child,
+  .zmax-table-responsive > .zmax-table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .zmax-table-responsive > .zmax-table-bordered > tbody > tr:last-child > th,
+  .zmax-table-responsive > .zmax-table-bordered > tfoot > tr:last-child > th,
+  .zmax-table-responsive > .zmax-table-bordered > tbody > tr:last-child > td,
+  .zmax-table-responsive > .zmax-table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+.zmax-clearfix:before,
+.zmax-clearfix:after {
+  content: " ";
+  display: table;
+}
+.zmax-clearfix:after {
+  clear: both;
+}
+.zmax-center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.zmax-pull-right {
+  float: right !important;
+}
+.zmax-pull-left {
+  float: left !important;
+}
+.zmax-hide {
+  display: none !important;
+}
+.zmax-show {
+  display: block !important;
+}
+.zmax-invisible {
+  visibility: hidden;
+}
+.zmax-text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.zmax-hidden {
+  display: none !important;
+}
+.zmax-affix {
+  position: fixed;
+}

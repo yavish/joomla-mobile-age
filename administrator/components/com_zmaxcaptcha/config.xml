@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="sms_setting" label="短信验证码设置" description="在这里设置短信验证码相关的信息">
+		<field name="user_id" 
+			   type="text" 
+			   default=""
+			   label="短信账户"
+			   description="发送短信的账户"
+			   size="40"
+		/>
+		<field name="password" 
+			   type="text"
+			   default=""
+			   label="密码"
+			   description ="发送短信账户的密码"
+			   size="40"
+		/>
+		<field name="time" 
+			   type="text"
+			   default="1"
+			   label="短信的有时间"
+			   description ="验证码短信的有效时间"
+			   size="40"
+		/>
+		<field name="msg_template" 
+			   type="textarea"
+			   default="你的验证码为_##CODE##_,请尽快填写,有效期为1分钟。【ZMAX程序人】"
+			   label="短信模板"
+			   description ="发送短信的模板"
+			   size="40"
+		/>
+	</fieldset>
+</config>

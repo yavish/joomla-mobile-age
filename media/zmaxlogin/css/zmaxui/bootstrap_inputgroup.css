@@ -1,0 +1,708 @@
+.zmaxui fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+.zmaxui legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+.zmaxui label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.zmaxui input[type="search"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.zmaxui input[type="radio"],
+.zmaxui input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+.zmaxui input[type="file"] {
+  display: block;
+}
+.zmaxui input[type="range"] {
+  display: block;
+  width: 100%;
+}
+.zmaxui select[multiple],
+.zmaxui select[size] {
+  height: auto;
+}
+.zmaxui input[type="file"]:focus,
+.zmaxui input[type="radio"]:focus,
+.zmaxui input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.zmaxui output {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+}
+.zmaxui .zmax-form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.zmaxui .zmax-form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.zmaxui .zmax-form-control::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.zmaxui .zmax-form-control:-ms-input-placeholder {
+  color: #999999;
+}
+.zmaxui .zmax-form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+.zmaxui .zmax-form-control[disabled],
+.zmaxui .zmax-form-control[readonly],
+.zmaxui fieldset[disabled] .zmax-form-control {
+  background-color: #eeeeee;
+  opacity: 1;
+}
+.zmaxui .zmax-form-control[disabled],
+.zmaxui fieldset[disabled] .zmax-form-control {
+  cursor: not-allowed;
+}
+.zmaxui textarea.zmax-form-control {
+  height: auto;
+}
+.zmaxui input[type="search"] {
+  -webkit-appearance: none;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .zmaxui input[type="date"].form-control,
+  .zmaxui input[type="time"].zmax-form-control,
+  .zmaxui input[type="datetime-local"].zmax-form-control,
+  .zmaxui input[type="month"].zmax-form-control {
+    line-height: 34px;
+  }
+  .zmaxui input[type="date"].zmax-input-sm,
+  .zmaxui input[type="time"].zmax-input-sm,
+  .zmaxui input[type="datetime-local"].zmax-input-sm,
+  .zmaxui input[type="month"].zmax-input-sm,
+  .zmaxui .zmax-input-group-sm input[type="date"],
+  .zmaxui .zmax-input-group-sm input[type="time"],
+  .zmaxui .zmax-input-group-sm input[type="datetime-local"],
+  .zmaxui .zmax-input-group-sm input[type="month"] {
+    line-height: 30px;
+  }
+  .zmaxui input[type="date"].zmax-input-lg,
+  .zmaxui input[type="time"].zmax-input-lg,
+  .zmaxui input[type="datetime-local"].zmax-input-lg,
+  .zmaxui input[type="month"].zmax-input-lg,
+  .zmaxui .zmax-input-group-lg input[type="date"],
+  .zmaxui .zmax-input-group-lg input[type="time"],
+  .zmaxui .zmax-input-group-lg input[type="datetime-local"],
+  .zmaxui .zmax-input-group-lg input[type="month"] {
+    line-height: 46px;
+  }
+}
+.zmaxui .zmax-form-group {
+  margin-bottom: 15px;
+}
+.zmaxui .zmax-radio,
+.zmaxui .zmax-checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.zmaxui .zmax-radio label,
+.zmaxui .zmax-checkbox label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+.zmaxui .zmax-radio input[type="radio"],
+.zmaxui .zmax-radio-inline input[type="radio"],
+.zmaxui .zmax-checkbox input[type="checkbox"],
+.zmaxui .zmax-checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px \9;
+}
+.zmaxui .zmax-radio + .zmax-radio,
+.zmaxui .zmax-checkbox + .zmax-checkbox {
+  margin-top: -5px;
+}
+.zmaxui .zmax-radio-inline,
+.zmaxui .zmax-checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+.zmaxui .zmax-radio-inline + .zmax-radio-inline,
+.zmaxui .zmax-checkbox-inline + .zmax-checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+.zmaxui input[type="radio"][disabled],
+.zmaxui input[type="checkbox"][disabled],
+.zmaxui input[type="radio"].zmax-disabled,
+.zmaxui input[type="checkbox"].zmax-disabled,
+.zmaxui fieldset[disabled] input[type="radio"],
+.zmaxui fieldset[disabled] input[type="checkbox"] {
+  cursor: not-allowed;
+}
+.zmaxui .zmax-radio-inline.zmax-disabled,
+.zmaxui .zmax-checkbox-inline.zmax-disabled,
+.zmaxui fieldset[disabled] .zmax-radio-inline,
+.zmaxui fieldset[disabled] .zmax-checkbox-inline {
+  cursor: not-allowed;
+}
+.zmaxui .zmax-radio.zmax-disabled label,
+.zmaxui .zmax-checkbox.zmax-disabled label,
+.zmaxui fieldset[disabled] .zmax-radio label,
+.zmaxui fieldset[disabled] .zmax-checkbox label {
+  cursor: not-allowed;
+}
+.zmaxui .zmax-form-control-static {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+  min-height: 34px;
+}
+.zmaxui .zmax-form-control-static.zmax-input-lg,
+.zmaxui .zmax-form-control-static.zmax-input-sm {
+  padding-left: 0;
+  padding-right: 0;
+}
+.zmaxui .zmax-input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.zmaxui select.zmax-input-sm {
+  height: 30px;
+  line-height: 30px;
+}
+.zmaxui textarea.zmax-input-sm,
+.zmaxui select[multiple].zmax-input-sm {
+  height: auto;
+}
+.zmaxui .zmax-form-group-sm .zmax-form-control {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.zmaxui .zmax-form-group-sm select.zmax-form-control {
+  height: 30px;
+  line-height: 30px;
+}
+.zmaxui .zmax-form-group-sm textarea.zmax-form-control,
+.zmaxui .zmax-form-group-sm select[multiple].zmax-form-control {
+  height: auto;
+}
+.zmaxui .zmax-form-group-sm .zmax-form-control-static {
+  height: 30px;
+  min-height: 32px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.zmaxui .zmax-input-lg {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.zmaxui select.zmax-input-lg {
+  height: 46px;
+  line-height: 46px;
+}
+.zmaxui textarea.zmax-input-lg,
+.zmaxui select[multiple].zmax-input-lg {
+  height: auto;
+}
+.zmaxui .zmax-form-group-lg .zmax-form-control {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.zmaxui .zmax-form-group-lg select.zmax-form-control {
+  height: 46px;
+  line-height: 46px;
+}
+.zmaxui .zmax-form-group-lg textarea.zmax-form-control,
+.zmaxui .zmax-form-group-lg select[multiple].zmax-form-control {
+  height: auto;
+}
+.zmaxui .zmax-form-group-lg .zmax-form-control-static {
+  height: 46px;
+  min-height: 38px;
+  padding: 11px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.zmaxui .zmax-has-feedback {
+  position: relative;
+}
+.zmaxui .zmax-has-feedback .zmax-form-control {
+  padding-right: 42.5px;
+}
+.zmaxui .zmax-form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  pointer-events: none;
+}
+.zmaxui .zmax-input-lg + .zmax-form-control-feedback,
+.zmaxui .zmax-input-group-lg + .zmax-form-control-feedback,
+.zmaxui .zmax-form-group-lg .zmax-form-control + .zmax-form-control-feedback {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+}
+.zmaxui .zmax-input-sm + .zmax-form-control-feedback,
+.zmaxui .zmax-input-group-sm + .zmax-form-control-feedback,
+.zmaxui .zmax-form-group-sm .zmax-form-control + .zmax-form-control-feedback {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+.zmaxui .zmax-has-success .zmax-help-block,
+.zmaxui .zmax-has-success .zmax-control-label,
+.zmaxui .zmax-has-success .zmax-radio,
+.zmaxui .zmax-has-success .zmax-checkbox,
+.zmaxui .zmax-has-success .zmax-radio-inline,
+.zmaxui .zmax-has-success .zmax-checkbox-inline,
+.zmaxui .zmax-has-success.zmax-radio label,
+.zmaxui .zmax-has-success.zmax-checkbox label,
+.zmaxui .zmax-has-success.zmax-radio-inline label,
+.zmaxui .zmax-has-success.zmax-checkbox-inline label {
+  color: #3c763d;
+}
+.zmaxui .zmax-has-success .zmax-form-control {
+  border-color: #3c763d;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.zmaxui .zmax-has-success .zmax-form-control:focus {
+  border-color: #2b542c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+}
+.zmaxui .zmax-has-success .zmax-input-group-addon {
+  color: #3c763d;
+  border-color: #3c763d;
+  background-color: #dff0d8;
+}
+.zmaxui .zmax-has-success .zmax-form-control-feedback {
+  color: #3c763d;
+}
+.zmaxui .zmax-has-warning .zmax-help-block,
+.zmaxui .zmax-has-warning .zmax-control-label,
+.zmaxui .zmax-has-warning .zmax-radio,
+.zmaxui .zmax-has-warning .zmax-checkbox,
+.zmaxui .zmax-has-warning .zmax-radio-inline,
+.zmaxui .zmax-has-warning .zmax-checkbox-inline,
+.zmaxui .zmax-has-warning.zmax-radio label,
+.zmaxui .zmax-has-warning.zmax-checkbox label,
+.zmaxui .zmax-has-warning.zmax-radio-inline label,
+.zmaxui .zmax-has-warning.zmax-checkbox-inline label {
+  color: #8a6d3b;
+}
+.zmaxui .zmax-has-warning .zmax-form-control {
+  border-color: #8a6d3b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.zmaxui .zmax-has-warning .zmax-form-control:focus {
+  border-color: #66512c;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+}
+.zmaxui .zmax-has-warning .zmax-input-group-addon {
+  color: #8a6d3b;
+  border-color: #8a6d3b;
+  background-color: #fcf8e3;
+}
+.zmaxui .zmax-has-warning .zmax-form-control-feedback {
+  color: #8a6d3b;
+}
+.zmaxui .zmax-has-error .zmax-help-block,
+.zmaxui .zmax-has-error .zmax-control-label,
+.zmaxui .zmax-has-error .zmax-radio,
+.zmaxui .zmax-has-error .zmax-checkbox,
+.zmaxui .zmax-has-error .zmax-radio-inline,
+.zmaxui .zmax-has-error .zmax-checkbox-inline,
+.zmaxui .zmax-has-error.zmax-radio label,
+.zmaxui .zmax-has-error.zmax-checkbox label,
+.zmaxui .zmax-has-error.zmax-radio-inline label,
+.zmaxui .zmax-has-error.zmax-checkbox-inline label {
+  color: #a94442;
+}
+.zmaxui .zmax-has-error .zmax-form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.zmaxui .zmax-has-error .zmax-form-control:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.zmaxui .zmax-has-error .zmax-input-group-addon {
+  color: #a94442;
+  border-color: #a94442;
+  background-color: #f2dede;
+}
+.zmaxui .zmax-has-error .zmax-form-control-feedback {
+  color: #a94442;
+}
+.zmaxui .zmax-has-feedback label ~ .zmax-form-control-feedback {
+  top: 25px;
+}
+.zmaxui .zmax-has-feedback label.zmax-sr-only ~ .zmax-form-control-feedback {
+  top: 0;
+}
+.zmaxui .zmax-help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373;
+}
+@media (min-width: 768px) {
+.zmaxui   .zmax-form-inline .zmax-form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .zmaxui .zmax-form-inline .zmax-form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .zmaxui .zmax-form-inline .zmax-form-control-static {
+    display: inline-block;
+  }
+  .zmaxui .zmax-form-inline .zmax-input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .zmaxui .zmax-form-inline .zmax-input-group .zmax-input-group-addon,
+  .zmaxui .zmax-form-inline .zmax-input-group .zmax-input-group-btn,
+  .zmaxui .zmax-form-inline .zmax-input-group .zmax-form-control {
+    width: auto;
+  }
+  .zmaxui .zmax-form-inline .zmax-input-group > .zmax-form-control {
+    width: 100%;
+  }
+  .zmaxui .zmax-form-inline .zmax-control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .zmaxui .zmax-form-inline .zmax-radio,
+  .zmaxui .zmax-form-inline .zmax-checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .zmaxui .zmax-form-inline .zmax-radio label,
+  .zmaxui .zmax-form-inline .zmax-checkbox label {
+    padding-left: 0;
+  }
+  .zmaxui .zmax-form-inline .zmax-radio input[type="radio"],
+  .zmaxui .zmax-form-inline .zmax-checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .zmaxui .zmax-form-inline .zmax-has-feedback .zmax-form-control-feedback {
+    top: 0;
+  }
+}
+.zmaxui .zmax-form-horizontal .zmax-radio,
+.zmaxui .zmax-form-horizontal .zmax-checkbox,
+.zmaxui .zmax-form-horizontal .zmax-radio-inline,
+.zmaxui .zmax-form-horizontal .zmax-checkbox-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px;
+}
+.zmaxui .zmax-form-horizontal .zmax-radio,
+.zmaxui .zmax-form-horizontal .zmax-checkbox {
+  min-height: 27px;
+}
+.zmaxui .zmax-form-horizontal .zmax-form-group {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 768px) {
+  .zmaxui .zmax-form-horizontal .zmax-control-label {
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 7px;
+  }
+}
+.zmaxui .zmax-form-horizontal .zmax-has-feedback .zmax-form-control-feedback {
+  right: 15px;
+}
+@media (min-width: 768px) {
+  .zmaxui .zmax-form-horizontal .zmax-form-group-lg .zmax-control-label {
+    padding-top: 14.333333px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .zmaxui .zmax-form-horizontal .zmax-form-group-sm .zmax-control-label {
+    padding-top: 6px;
+    font-size: 12px;
+  }
+}
+.zmaxui .zmax-input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+}
+.zmaxui .zmax-input-group[class*="col-"] {
+  float: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+.zmaxui .zmax-input-group .zmax-form-control {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+.zmaxui .zmax-input-group-lg > .zmax-form-control,
+.zmaxui .zmax-input-group-lg > .zmax-input-group-addon,
+.zmaxui .zmax-input-group-lg > .zmax-input-group-btn > .zmax-btn {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.zmaxui select.zmax-input-group-lg > .zmax-form-control,
+.zmaxui select.zmax-input-group-lg > .zmax-input-group-addon,
+.zmaxui select.zmax-input-group-lg > .zmax-input-group-btn > .zmax-btn {
+  height: 46px;
+  line-height: 46px;
+}
+.zmaxui textarea.zmax-input-group-lg > .zmax-form-control,
+.zmaxui textarea.zmax-input-group-lg > .zmax-input-group-addon,
+.zmaxui textarea.zmax-input-group-lg > .zmax-input-group-btn > .zmax-btn,
+.zmaxui select[multiple].zmax-input-group-lg > .zmax-form-control,
+.zmaxui select[multiple].zmax-input-group-lg > .zmax-input-group-addon,
+.zmaxui select[multiple].zmax-input-group-lg > .zmax-input-group-btn > .zmax-btn {
+  height: auto;
+}
+.zmaxui .zmax-input-group-sm > .zmax-form-control,
+.zmaxui .zmax-input-group-sm > .zmax-input-group-addon,
+.zmaxui .zmax-input-group-sm > .zmax-input-group-btn > .zmax-btn {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.zmaxui select.zmax-input-group-sm > .zmax-form-control,
+.zmaxui select.zmax-input-group-sm > .zmax-input-group-addon,
+.zmaxui select.zmax-input-group-sm > .zmax-input-group-btn > .zmax-btn {
+  height: 30px;
+  line-height: 30px;
+}
+.zmaxui textarea.zmax-input-group-sm > .zmax-form-control,
+.zmaxui textarea.zmax-input-group-sm > .zmax-input-group-addon,
+.zmaxui textarea.zmax-input-group-sm > .zmax-input-group-btn > .zmax-btn,
+.zmaxui select[multiple].zmax-input-group-sm > .zmax-form-control,
+.zmaxui select[multiple].zmax-input-group-sm > .zmax-input-group-addon,
+.zmaxui select[multiple].zmax-input-group-sm > .zmax-input-group-btn > .zmax-btn {
+  height: auto;
+}
+.zmaxui .zmax-input-group-addon,
+.zmaxui .zmax-input-group-btn,
+.zmaxui .zmax-input-group .zmax-form-control {
+  display: table-cell;
+}
+.zmaxui .zmax-input-group-addon:not(:first-child):not(:last-child),
+.zmaxui .zmax-input-group-btn:not(:first-child):not(:last-child),
+.zmaxui .zmax-input-group .zmax-form-control:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.zmaxui .zmax-input-group-addon,
+.zmaxui .zmax-input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.zmaxui .zmax-input-group-addon {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1;
+  color: #555555;
+  text-align: center;
+  background-color: #eeeeee;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+.zmaxui .zmax-input-group-addon.zmax-input-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.zmaxui .zmax-input-group-addon.zmax-input-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+}
+.zmaxui .zmax-input-group-addon input[type="radio"],
+.zmaxui .zmax-input-group-addon input[type="checkbox"] {
+  margin-top: 0;
+}
+.zmaxui .zmax-input-group .zmax-form-control:first-child,
+.zmaxui .zmax-input-group-addon:first-child,
+.zmaxui .zmax-input-group-btn:first-child > .zmax-btn,
+.zmaxui .zmax-input-group-btn:first-child > .zmax-btn-group > .zmax-btn,
+.zmaxui .zmax-input-group-btn:first-child > .zmax-dropdown-toggle,
+.zmaxui .zmax-input-group-btn:last-child > .zmax-btn:not(:last-child):not(.zmax-dropdown-toggle),
+.zmaxui .zmax-input-group-btn:last-child > .zmax-btn-group:not(:last-child) > .zmax-btn {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.zmaxui .zmax-input-group-addon:first-child {
+  border-right: 0;
+}
+.zmaxui .zmax-input-group .zmax-form-control:last-child,
+.zmaxui .zmax-input-group-addon:last-child,
+.zmaxui .zmax-input-group-btn:last-child > .zmax-btn,
+.zmaxui .zmax-input-group-btn:last-child > .zmax-btn-group > .zmax-btn,
+.zmaxui .zmax-input-group-btn:last-child > .zmax-dropdown-toggle,
+.zmaxui .zmax-input-group-btn:first-child > .zmax-btn:not(:first-child),
+.zmaxui .zmax-input-group-btn:first-child > .zmax-btn-group:not(:first-child) > .zmax-btn {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.zmaxui .zmax-input-group-addon:last-child {
+  border-left: 0;
+}
+.zmaxui .zmax-input-group-btn {
+  position: relative;
+  font-size: 0;
+  white-space: nowrap;
+}
+.zmaxui .zmax-input-group-btn > .zmax-btn {
+  position: relative;
+}
+.zmaxui .zmax-input-group-btn > .zmax-btn + .zmax-btn {
+  margin-left: -1px;
+}
+.zmaxui .zmax-input-group-btn > .zmax-btn:hover,
+.zmaxui .zmax-input-group-btn > .zmax-btn:focus,
+.zmaxui .zmax-input-group-btn > .zmax-btn:active {
+  z-index: 2;
+}
+.zmaxui .zmax-input-group-btn:first-child > .zmax-btn,
+.zmaxui .zmax-input-group-btn:first-child > .zmax-btn-group {
+  margin-right: -1px;
+}
+.zmaxui .zmax-input-group-btn:last-child > .zmax-btn,
+.zmaxui .zmax-input-group-btn:last-child > .zmax-btn-group {
+  z-index: 2;
+  margin-left: -1px;
+}
+.zmaxui .zmax-clearfix:before,
+.zmaxui .zmax-clearfix:after,
+.zmaxui .zmax-form-horizontal .zmax-form-group:before,
+.zmaxui .zmax-form-horizontal .zmax-form-group:after {
+  content: " ";
+  display: table;
+}
+.zmaxui .zmax-clearfix:after,
+.zmaxui .zmax-form-horizontal .zmax-form-group:after {
+  clear: both;
+}
+.zmaxui .zmax-center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.zmaxui .zmax-pull-right {
+  float: right !important;
+}
+.zmaxui .zmax-pull-left {
+  float: left !important;
+}
+.zmaxui .zmax-hide {
+  display: none !important;
+}
+.zmaxui .zmax-show {
+  display: block !important;
+}
+.zmaxui .zmax-invisible {
+  visibility: hidden;
+}
+.zmaxui .zmax-text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.zmaxui .zmax-hidden {
+  display: none !important;
+}
+.zmaxui .zmax-affix {
+  position: fixed;
+}

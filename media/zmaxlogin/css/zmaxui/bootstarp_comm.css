@@ -1,0 +1,271 @@
+.zmaxui article,
+.zmaxui aside,
+.zmaxui details,
+.zmaxui figcaption,
+.zmaxui figure,
+.zmaxui footer,
+.zmaxui header,
+.zmaxui hgroup,
+.zmaxui main,
+.zmaxui menu,
+.zmaxui nav,
+.zmaxui section,
+.zmaxui summary {
+  display: block;
+}
+.zmaxui audio,
+.zmaxui canvas,
+.zmaxui progress,
+.zmaxui video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.zmaxui audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+.zmaxui template {
+  display: none;
+}
+
+.zmaxui a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.zmaxui a:active,
+.zmaxui a:hover {
+  outline: 0;
+}
+.zmaxui abbr[title] {
+  border-bottom: 1px dotted;
+}
+.zmaxui b,
+.zmaxui strong {
+  font-weight: bold;
+}
+.zmaxui dfn {
+  font-style: italic;
+}
+.zmaxui h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+.zmaxui mark {
+  background: #ff0;
+  color: #000;
+}
+.zmaxui small {
+  font-size: 80%;
+}
+.zmaxui sub,
+.zmaxui sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.zmaxui sup {
+  top: -0.5em;
+}
+.zmaxui sub {
+  bottom: -0.25em;
+}
+.zmaxui img {
+  border: 0;
+}
+.zmaxui svg:not(:root) {
+  overflow: hidden;
+}
+.zmaxui figure {
+  margin: 1em 40px;
+}
+.zmaxui hr {
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+.zmaxui pre {
+  overflow: auto;
+}
+.zmaxui code,
+.zmaxui kbd,
+.zmaxui pre,
+.zmaxui samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+.zmaxui button,
+.zmaxui input,
+.zmaxui optgroup,
+.zmaxui select,
+.zmaxui textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+.zmaxui button {
+  overflow: visible;
+}
+.zmaxui button,
+.zmaxui select {
+  text-transform: none;
+}
+.zmaxui button,
+.zmaxui input[type="button"],
+.zmaxui input[type="reset"],
+.zmaxui input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.zmaxui button[disabled],
+.zmaxui input[disabled] {
+  cursor: default;
+}
+.zmaxui button::-moz-focus-inner,
+.zmaxui input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.zmaxui input {
+  line-height: normal;
+}
+.zmaxui input[type="checkbox"],
+.zmaxui input[type="radio"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+.zmaxui input[type="number"]::-webkit-inner-spin-button,
+.zmaxui input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+.zmaxui input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.zmaxui input[type="search"]::-webkit-search-cancel-button,
+.zmaxui input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+.zmaxui fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+.zmaxui legend {
+  border: 0;
+  padding: 0;
+}
+.zmaxui textarea {
+  overflow: auto;
+}
+.zmaxui optgroup {
+  font-weight: bold;
+}
+.zmaxui table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.zmaxui td,
+.zmaxui th {
+  padding: 0;
+}
+.zmaxui * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.zmaxui *:before,
+.zmaxui *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.zmaxui input,
+.zmaxui button,
+.zmaxui select,
+.zmaxui textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+.zmaxui a:hover,
+.zmaxui a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+.zmaxui a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.zmaxui figure {
+  margin: 0;
+}
+.zmaxui img {
+  vertical-align: middle;
+}
+
+
+.zmax-img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.zmax-img-rounded {
+  border-radius: 6px;
+}
+.zmax-img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.zmax-img-circle {
+  border-radius: 50%;
+}
+.zmaxui hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+.zmax-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.zmax-sr-only-focusable:active,
+.zmax-sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+.zmaxui  [role="button"] {
+  cursor: pointer;
+}

@@ -1,0 +1,557 @@
+.zmaxui .zmax-btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.zmaxui .zmax-btn:focus,
+.zmaxui .zmax-btn:active:focus,
+.zmaxui .zmax-btn.zmax-active:focus,
+.zmaxui .zmax-btn.zmax-focus,
+.zmaxui .zmax-btn:active.zmax-focus,
+.zmaxui .zmax-btn.zmax-active.zmax-focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.zmaxui .zmax-btn:hover,
+.zmaxui .zmax-btn:focus,
+.zmaxui .zmax-btn.zmax-focus {
+  color: #333333;
+  text-decoration: none;
+}
+.zmaxui .zmax-btn:active,
+.zmaxui .zmax-btn.zmax-active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.zmaxui .zmax-btn.zmax-disabled,
+.zmaxui .zmax-btn[disabled],
+.zmaxui fieldset[disabled] .zmax-btn {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.zmaxui a.zmax-btn.zmax-disabled,
+.zmaxui fieldset[disabled] a.zmax-btn {
+  pointer-events: none;
+}
+.zmaxui .zmax-btn-default {
+  color: #333333;
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.zmaxui .zmax-btn-default:focus,
+.zmaxui .zmax-btn-default.zmax-focus {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.zmaxui .zmax-btn-default:hover {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.zmaxui .zmax-btn-default:active,
+.zmaxui .zmax-btn-default.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-default {
+  color: #333333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.zmaxui .zmax-btn-default:active:hover,
+.zmaxui .zmax-btn-default.zmax-active:hover,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-default:hover,
+.zmaxui .zmax-btn-default:active:focus,
+.zmaxui .zmax-btn-default.zmax-active:focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-default:focus,
+.zmaxui .zmax-btn-default:active.zmax-focus,
+.zmaxui .zmax-btn-default.zmax-active.zmax-focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-default.zmax-focus {
+  color: #333333;
+  background-color: #d4d4d4;
+  border-color: #8c8c8c;
+}
+.zmaxui .zmax-btn-default:active,
+.zmaxui .zmax-btn-default.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-default {
+  background-image: none;
+}
+.zmaxui .zmax-btn-default.zmax-disabled,
+.zmaxui .zmax-btn-default[disabled],
+.zmaxui fieldset[disabled] .zmax-btn-default,
+.zmaxui .zmax-btn-default.zmax-disabled:hover,
+.zmaxui .zmax-btn-default[disabled]:hover,
+.zmaxui fieldset[disabled] .zmax-btn-default:hover,
+.zmaxui .zmax-btn-default.zmax-disabled:focus,
+.zmaxui .zmax-btn-default[disabled]:focus,
+.zmaxui fieldset[disabled] .zmax-btn-default:focus,
+.zmaxui .zmax-btn-default.zmax-disabled.zmax-focus,
+.zmaxui .zmax-btn-default[disabled].zmax-focus,
+.zmaxui fieldset[disabled] .zmax-btn-default.zmax-focus,
+.zmaxui .zmax-btn-default.zmax-disabled:active,
+.zmaxui .zmax-btn-default[disabled]:active,
+.zmaxui fieldset[disabled] .zmax-btn-default:active,
+.zmaxui .zmax-btn-default.zmax-disabled.zmax-active,
+.zmaxui .zmax-btn-default[disabled].zmax-active,
+.zmaxui fieldset[disabled] .zmax-btn-default.zmax-active {
+  background-color: #ffffff;
+  border-color: #cccccc;
+}
+.zmaxui .zmax-btn-default .zmax-badge {
+  color: #ffffff;
+  background-color: #333333;
+}
+.zmaxui .zmax-btn-primary {
+  color: #ffffff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.zmaxui .zmax-btn-primary:focus,
+.zmaxui .zmax-btn-primary.zmax-focus {
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #122b40;
+}
+.zmaxui .zmax-btn-primary:hover {
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.zmaxui .zmax-btn-primary:active,
+.zmaxui .zmax-btn-primary.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-primary {
+  color: #ffffff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+.zmaxui .zmax-btn-primary:active:hover,
+.zmaxui .zmax-btn-primary.zmax-active:hover,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-primary:hover,
+.zmaxui .zmax-btn-primary:active:focus,
+.zmaxui .zmax-btn-primary.zmax-active:focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-primary:focus,
+.zmaxui .zmax-btn-primary:active.zmax-focus,
+.zmaxui .zmax-btn-primary.zmax-active.zmax-focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-primary.zmax-focus {
+  color: #ffffff;
+  background-color: #204d74;
+  border-color: #122b40;
+}
+.zmaxui .zmax-btn-primary:active,
+.zmaxui .zmax-btn-primary.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-primary {
+  background-image: none;
+}
+.zmaxui .zmax-btn-primary.zmax-disabled,
+.zmaxui .zmax-btn-primary[disabled],
+.zmaxui fieldset[disabled] .zmax-btn-primary,
+.zmaxui .zmax-btn-primary.zmax-disabled:hover,
+.zmaxui .zmax-btn-primary[disabled]:hover,
+.zmaxui fieldset[disabled] .zmax-btn-primary:hover,
+.zmaxui .zmax-btn-primary.zmax-disabled:focus,
+.zmaxui .zmax-btn-primary[disabled]:focus,
+.zmaxui fieldset[disabled] .zmax-btn-primary:focus,
+.zmaxui .zmax-btn-primary.zmax-disabled.zmax-focus,
+.zmaxui .zmax-btn-primary[disabled].zmax-focus,
+.zmaxui fieldset[disabled] .zmax-btn-primary.zmax-focus,
+.zmaxui .zmax-btn-primary.zmax-disabled:active,
+.zmaxui .zmax-btn-primary[disabled]:active,
+.zmaxui fieldset[disabled] .zmax-btn-primary:active,
+.zmaxui .zmax-btn-primary.zmax-disabled.zmax-active,
+.zmaxui .zmax-btn-primary[disabled].zmax-active,
+.zmaxui fieldset[disabled] .zmax-btn-primary.zmax-active {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.zmaxui .zmax-btn-primary .zmax-badge {
+  color: #337ab7;
+  background-color: #ffffff;
+}
+.zmaxui .zmax-btn-success {
+  color: #ffffff;
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.zmaxui .zmax-btn-success:focus,
+.zmaxui .zmax-btn-success.zmax-focus {
+  color: #ffffff;
+  background-color: #449d44;
+  border-color: #255625;
+}
+.zmaxui .zmax-btn-success:hover {
+  color: #ffffff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.zmaxui .zmax-btn-success:active,
+.zmaxui .zmax-btn-success.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-success {
+  color: #ffffff;
+  background-color: #449d44;
+  border-color: #398439;
+}
+.zmaxui .zmax-btn-success:active:hover,
+.zmaxui .zmax-btn-success.zmax-active:hover,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-success:hover,
+.zmaxui .zmax-btn-success:active:focus,
+.zmaxui .zmax-btn-success.zmax-active:focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-success:focus,
+.zmaxui .zmax-btn-success:active.zmax-focus,
+.zmaxui .zmax-btn-success.zmax-active.zmax-focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-success.zmax-focus {
+  color: #ffffff;
+  background-color: #398439;
+  border-color: #255625;
+}
+.zmaxui .zmax-btn-success:active,
+.zmaxui .zmax-btn-success.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-success {
+  background-image: none;
+}
+.zmaxui .zmax-btn-success.zmax-disabled,
+.zmaxui .zmax-btn-success[disabled],
+.zmaxui fieldset[disabled] .zmax-btn-success,
+.zmaxui .zmax-btn-success.zmax-disabled:hover,
+.zmaxui .zmax-btn-success[disabled]:hover,
+.zmaxui fieldset[disabled] .zmax-btn-success:hover,
+.zmaxui .zmax-btn-success.zmax-disabled:focus,
+.zmaxui .zmax-btn-success[disabled]:focus,
+.zmaxui fieldset[disabled] .zmax-btn-success:focus,
+.zmaxui .zmax-btn-success.zmax-disabled.zmax-focus,
+.zmaxui .zmax-btn-success[disabled].zmax-focus,
+.zmaxui fieldset[disabled] .zmax-btn-success.zmax-focus,
+.zmaxui .zmax-btn-success.zmax-disabled:active,
+.zmaxui .zmax-btn-success[disabled]:active,
+.zmaxui fieldset[disabled] .zmax-btn-success:active,
+.zmaxui .zmax-btn-success.zmax-disabled.zmax-active,
+.zmaxui .zmax-btn-success[disabled].zmax-active,
+.zmaxui fieldset[disabled] .zmax-btn-success.zmax-active {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+.zmaxui .zmax-btn-success .zmax-badge {
+  color: #5cb85c;
+  background-color: #ffffff;
+}
+.zmaxui .zmax-btn-info {
+  color: #ffffff;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.zmaxui .zmax-btn-info:focus,
+.zmaxui .zmax-btn-info.zmax-focus {
+  color: #ffffff;
+  background-color: #31b0d5;
+  border-color: #1b6d85;
+}
+.zmaxui .zmax-btn-info:hover {
+  color: #ffffff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.zmaxui .zmax-btn-info:active,
+.zmaxui .zmax-btn-info.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-info {
+  color: #ffffff;
+  background-color: #31b0d5;
+  border-color: #269abc;
+}
+.zmaxui .zmax-btn-info:active:hover,
+.zmaxui .zmax-btn-info.zmax-active:hover,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-info:hover,
+.zmaxui .zmax-btn-info:active:focus,
+.zmaxui .zmax-btn-info.zmax-active:focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-info:focus,
+.zmaxui .zmax-btn-info:active.zmax-focus,
+.zmaxui .zmax-btn-info.zmax-active.zmax-focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-info.zmax-focus {
+  color: #ffffff;
+  background-color: #269abc;
+  border-color: #1b6d85;
+}
+.zmaxui .zmax-btn-info:active,
+.zmaxui .zmax-btn-info.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-info {
+  background-image: none;
+}
+.zmaxui .zmax-btn-info.zmax-disabled,
+.zmaxui .zmax-btn-info[disabled],
+.zmaxui fieldset[disabled] .zmax-btn-info,
+.zmaxui .zmax-btn-info.zmax-disabled:hover,
+.zmaxui .zmax-btn-info[disabled]:hover,
+.zmaxui fieldset[disabled] .zmax-btn-info:hover,
+.zmaxui .zmax-btn-info.zmax-disabled:focus,
+.zmaxui .zmax-btn-info[disabled]:focus,
+.zmaxui fieldset[disabled] .zmax-btn-info:focus,
+.zmaxui .zmax-btn-info.zmax-disabled.zmax-focus,
+.zmaxui .zmax-btn-info[disabled].zmax-focus,
+.zmaxui fieldset[disabled] .zmax-btn-info.zmax-focus,
+.zmaxui .zmax-btn-info.zmax-disabled:active,
+.zmaxui .zmax-btn-info[disabled]:active,
+.zmaxui fieldset[disabled] .zmax-btn-info:active,
+.zmaxui .zmax-btn-info.zmax-disabled.zmax-active,
+.zmaxui .zmax-btn-info[disabled].zmax-active,
+.zmaxui fieldset[disabled] .zmax-btn-info.zmax-active {
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+.zmaxui .zmax-btn-info .zmax-badge {
+  color: #5bc0de;
+  background-color: #ffffff;
+}
+.zmaxui .zmax-btn-warning {
+  color: #ffffff;
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.zmaxui .zmax-btn-warning:focus,
+.zmaxui .zmax-btn-warning.zmax-focus {
+  color: #ffffff;
+  background-color: #ec971f;
+  border-color: #985f0d;
+}
+.zmaxui .zmax-btn-warning:hover {
+  color: #ffffff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.zmaxui .zmax-btn-warning:active,
+.zmaxui .zmax-btn-warning.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-warning {
+  color: #ffffff;
+  background-color: #ec971f;
+  border-color: #d58512;
+}
+.zmaxui .zmax-btn-warning:active:hover,
+.zmaxui .zmax-btn-warning.zmax-active:hover,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-warning:hover,
+.zmaxui .zmax-btn-warning:active:focus,
+.zmaxui .zmax-btn-warning.zmax-active:focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-warning:focus,
+.zmaxui .zmax-btn-warning:active.zmax-focus,
+.zmaxui .zmax-btn-warning.zmax-active.zmax-focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-warning.zmax-focus {
+  color: #ffffff;
+  background-color: #d58512;
+  border-color: #985f0d;
+}
+.zmaxui .zmax-btn-warning:active,
+.zmaxui .zmax-btn-warning.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-warning {
+  background-image: none;
+}
+.zmaxui .zmax-btn-warning.zmax-disabled,
+.zmaxui .zmax-btn-warning[disabled],
+.zmaxui fieldset[disabled] .zmax-btn-warning,
+.zmaxui .zmax-btn-warning.zmax-disabled:hover,
+.zmaxui .zmax-btn-warning[disabled]:hover,
+.zmaxui fieldset[disabled] .zmax-btn-warning:hover,
+.zmaxui .zmax-btn-warning.zmax-disabled:focus,
+.zmaxui .zmax-btn-warning[disabled]:focus,
+.zmaxui fieldset[disabled] .zmax-btn-warning:focus,
+.zmaxui .zmax-btn-warning.zmax-disabled.zmax-focus,
+.zmaxui .zmax-btn-warning[disabled].zmax-focus,
+.zmaxui fieldset[disabled] .zmax-btn-warning.zmax-focus,
+.zmaxui .zmax-btn-warning.zmax-disabled:active,
+.zmaxui .zmax-btn-warning[disabled]:active,
+.zmaxui fieldset[disabled] .zmax-btn-warning:active,
+.zmaxui .zmax-btn-warning.zmax-disabled.zmax-active,
+.zmaxui .zmax-btn-warning[disabled].zmax-active,
+.zmaxui fieldset[disabled] .zmax-btn-warning.zmax-active {
+  background-color: #f0ad4e;
+  border-color: #eea236;
+}
+.zmaxui .zmax-btn-warning .zmax-badge {
+  color: #f0ad4e;
+  background-color: #ffffff;
+}
+.zmaxui .zmax-btn-danger {
+  color: #ffffff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.zmaxui .zmax-btn-danger:focus,
+.zmaxui .zmax-btn-danger.zmax-focus {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+.zmaxui .zmax-btn-danger:hover {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.zmaxui .zmax-btn-danger:active,
+.zmaxui .zmax-btn-danger.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-danger {
+  color: #ffffff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
+.zmaxui .zmax-btn-danger:active:hover,
+.zmaxui .zmax-btn-danger.zmax-active:hover,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-danger:hover,
+.zmaxui .zmax-btn-danger:active:focus,
+.zmaxui .zmax-btn-danger.zmax-active:focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-danger:focus,
+.zmaxui .zmax-btn-danger:active.zmax-focus,
+.zmaxui .zmax-btn-danger.zmax-active.zmax-focus,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-danger.zmax-focus {
+  color: #ffffff;
+  background-color: #ac2925;
+  border-color: #761c19;
+}
+.zmaxui .zmax-btn-danger:active,
+.zmaxui .zmax-btn-danger.zmax-active,
+.zmaxui .zmax-open > .zmax-dropdown-toggle.zmax-btn-danger {
+  background-image: none;
+}
+.zmaxui .zmax-btn-danger.zmax-disabled,
+.zmaxui .zmax-btn-danger[disabled],
+.zmaxui fieldset[disabled] .zmax-btn-danger,
+.zmaxui .zmax-btn-danger.zmax-disabled:hover,
+.zmaxui .zmax-btn-danger[disabled]:hover,
+.zmaxui fieldset[disabled] .zmax-btn-danger:hover,
+.zmaxui .zmax-btn-danger.zmax-disabled:focus,
+.zmaxui .zmax-btn-danger[disabled]:focus,
+.zmaxui fieldset[disabled] .zmax-btn-danger:focus,
+.zmaxui .zmax-btn-danger.zmax-disabled.zmax-focus,
+.zmaxui .zmax-btn-danger[disabled].zmax-focus,
+.zmaxui fieldset[disabled] .zmax-btn-danger.zmax-focus,
+.zmaxui .zmax-btn-danger.zmax-disabled:active,
+.zmaxui .zmax-btn-danger[disabled]:active,
+.zmaxui fieldset[disabled] .zmax-btn-danger:active,
+.zmaxui .zmax-btn-danger.zmax-disabled.zmax-active,
+.zmaxui .zmax-btn-danger[disabled].zmax-active,
+.zmaxui fieldset[disabled] .zmax-btn-danger.zmax-active {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+.zmaxui .zmax-btn-danger .zmax-badge {
+  color: #d9534f;
+  background-color: #ffffff;
+}
+.zmaxui .zmax-btn-link {
+  color: #337ab7;
+  font-weight: normal;
+  border-radius: 0;
+}
+.zmaxui .zmax-btn-link,
+.zmax-btn-link:active,
+.zmax-btn-link.zmax-active,
+.zmax-btn-link[disabled],
+.zmaxui fieldset[disabled] .zmax-btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.zmaxui .zmax-btn-link,
+.zmaxui .zmax-btn-link:hover,
+.zmaxui .zmax-btn-link:focus,
+.zmaxui .zmax-btn-link:active {
+  border-color: transparent;
+}
+.zmaxui .zmax-btn-link:hover,
+.zmaxui .zmax-btn-link:focus {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.zmaxui .zmax-btn-link[disabled]:hover,
+.zmaxui fieldset[disabled] .zmax-btn-link:hover,
+.zmaxui .zmax-btn-link[disabled]:focus,
+.zmaxui fieldset[disabled] .zmax-btn-link:focus {
+  color: #777777;
+  text-decoration: none;
+}
+.zmaxui .zmax-btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+.zmaxui .zmax-btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.zmaxui .zmax-btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.zmaxui .zmax-btn-block {
+  display: block;
+  width: 100%;
+}
+.zmaxui .zmax-btn-block + .zmax-btn-block {
+  margin-top: 5px;
+}
+.zmaxui input[type="submit"].zmax-btn-block,
+.zmaxui input[type="reset"].zmax-btn-block,
+.zmaxui input[type="button"].zmax-btn-block {
+  width: 100%;
+}
+.zmaxui .zmax-clearfix:before,
+.zmaxui .zmax-clearfix:after {
+  content: " ";
+  display: table;
+}
+.zmaxui .zmax-clearfix:after {
+  clear: both;
+}
+.zmaxui .zmax-center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.zmaxui .zmax-pull-right {
+  float: right !important;
+}
+.zmaxui .zmax-pull-left {
+  float: left !important;
+}
+.zmaxui .zmax-hide {
+  display: none !important;
+}
+.zmaxui .zmax-show {
+  display: block !important;
+}
+.zmaxui .zmax-invisible {
+  visibility: hidden;
+}
+.zmaxui .zmax-text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.zmaxui .zmax-hidden {
+  display: none !important;
+}
+.zmaxui .zmax-affix {
+  position: fixed;
+}

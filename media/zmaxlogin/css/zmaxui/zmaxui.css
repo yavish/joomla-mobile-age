@@ -1,0 +1,12 @@
+@import url(bootstarp_comm.css); 
+@import url(bootstrap_typography.css); 
+@import url(bootstrap_tables.css); 
+@import url(bootstrap_grids.css); 
+/*@import url(bootstrap_btn.css); 按钮组已经包含了按钮*/
+@import url(bootstrap_btngroup.css); 
+/*@import url(bootstrap_form.css); form样式已经在inputgroup中包含了*/
+@import url(bootstrap_inputgroup.css); 
+@import url(bootstrap_glyphicons.css); 
+@import url(bootstrap_nav.css); 
+
+

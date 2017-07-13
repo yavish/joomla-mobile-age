@@ -1,0 +1,225 @@
+
+body {
+	background-color: __styleBgColor;
+	color: __styleTextColor;
+	line-height: __styleLineHeight;
+	font-size: __styleBodyFontSize;
+	font-family: __styleBodyFont;
+	font-weight: __styleBodyFontWeight;
+}
+
+
+/* Logo */
+a.logo strong {
+	width: __styleLogoWidth;
+	height: __styleLogoHeight;
+}
+
+/* ?styleLogoImage */
+a.logo strong {
+	background: url({__baseUrl}__styleLogoImage) no-repeat;
+	text-indent: -999em;
+}
+/* /styleLogoImage */
+
+
+a {
+	color: __styleLinkColor;
+}
+
+a:hover, a:focus, a:active {
+	color: __styleLinkHoverColor;
+}
+
+/* common style */
+h1, h2, h3, h4, h5, h6 {
+	font-family: __styleHeadingFont;
+}
+
+/* JOOMLA STYLE
+--------------------------------------- */
+h2.item-title,
+.item-title h2,
+.item-page .page-header h2 {
+	font-family: __styleHeadingFont;
+}
+
+
+.items-row .item {
+	font-size: __styleBodyFontSize;
+}
+
+/* Header */
+#header {
+	background-color: __styleHeaderBgColor;
+	border-color: __styleHeaderBorderColor;
+	color: __styleHeaderTextColor;
+}
+
+#header a {
+	color: __styleHeaderLinkColor;
+}
+
+#header a:hover, #header a:focus, #header a:active {
+	color: __styleHeaderLinkHoverColor;
+}
+
+/* Main navigation */
+#mainnav {
+	background-color: __styleMenuBgColor;
+	border-color: __styleMenuBorderColor;
+}
+
+#mainnav .nav > li > a,
+#mainnav .nav span.separator {
+	color: __styleMenuColor;
+}
+
+#mainnav .nav > li > a:hover,
+#mainnav .nav > li > a:focus,
+#mainnav .nav > li > a:active {
+	color: __styleMenuHoverColor;
+}
+
+#mainnav .nav > li > a:hover:after,
+#mainnav .nav > li:hover > a:after,
+#mainnav .nav > li.active > a:hover:after,
+#mainnav .nav > li > .separator:hover:after,
+#mainnav .nav > li:hover > .separator:after {
+	border-color: __styleMenuBorderHoverColor;
+}
+
+#mainnav .nav > li.active > a,
+#mainnav .nav > li.active .separator {
+	color: __styleMenuActiveColor;
+}
+
+#mainnav .nav > li.active a:after,
+#mainnav .nav > li.active .separator:after {
+	border-color: __styleMenuBorderHoverColor;
+}
+
+/* Dropdown menu */
+.dropdown-menu, .nav .nav-child {
+	background-color: __styleSubnavBgColor;
+}
+
+#mainnav .dropdown-menu > li,
+#mainnav .nav .nav-child > li {
+	/*border-bottom-color: rgba(255,255,255,0.2);*/
+}
+
+.dropdown-menu > li > a,
+.nav .nav-child > li > a {
+	color: __styleSubnavTextColor;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a,
+.nav .nav-child > li:hover > a,
+.nav .nav-child > li:focus > a {
+  background: __styleSubnavHoverBgColor;
+  color: __styleSubnavHoverColor;
+}
+
+.dropdown-menu, .nav .nav-child {
+	border-color: __styleSubnavHoverBgColor;
+}
+
+/* Custom color for collapse menu */
+@media (max-width: 992px) {
+	#mainnav .nav-collapse .nav > li > a,
+	#mainnav .nav-collapse .nav > li > .separator {
+		color: __styleCollapseMenuColor;
+	}
+
+	#mainnav .nav-collapse .nav > li > a:hover {
+		color: __styleCollapseMenuHoverColor;
+	}
+
+	#mainnav .nav > li > a:hover:after,
+	#mainnav .nav > li > a:focus:after,
+	#mainnav .nav > li:hover > a:after {
+		display: none;
+	}
+
+	#mainnav .nav-collapse .nav > li.active > a {
+		color: __styleCollapseActiveColor;
+	}	
+}
+
+
+
+/* Search form */
+.navbar-form {
+	background-color: __styleSearchBgColor;
+	color: __styleSearchTextColor;
+}
+
+.navbar-form .search .inputbox {
+	color: __styleSearchTextColor;
+}
+
+/* Footer
+--------- */
+#footer {
+	background: __styleFooterBgColor;
+	border-color: __styleFooterBorderColor;
+	color: __styleFooterTextColor;
+}
+
+#footer a {
+	color: __styleFooterLinkColor;
+}
+
+#footer a:hover, #footer a:focus, #footer a:active {
+	color: __styleFooterLinkHoverColor;
+}
+
+#footer .nav > li::before {
+	color: __styleFooterTextColor;
+}
+
+/* Footer menu*/
+#footer .nav > li > a {
+	color: __styleFooterMenuColor;
+}
+
+#footer .nav > li > a:hover,
+#footer .nav > li > a:focus,
+#footer .nav > li > a:active {
+	border-color: __styleFooterMenuHoverColor;
+	color: __styleFooterMenuHoverColor;
+}
+
+
+/* Module Styles
+--------------------*/
+/* ?styleModuleModules_1 */
+__styleModuleModules_1 {
+	color: __styleModuleColor_1;
+	background-color: __styleModuleBg_1;
+}
+/* /styleModuleModules_1 */
+
+/* Module Styles
+--------------------*/
+/* ?styleModuleModules_2 */
+__styleModuleModules_2 {
+	color: __styleModuleColor_2;
+	background-color: __styleModuleBg_2;
+}
+/* /styleModuleModules_2 */
+
+/* Module Styles
+--------------------*/
+/* ?styleModuleModules_3 */
+__styleModuleModules_3 {
+	color: __styleModuleColor_3;
+	background-color: __styleModuleBg_3;
+}
+/* /styleModuleModules_3 */
+
+

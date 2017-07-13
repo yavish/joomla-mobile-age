@@ -1,0 +1,22 @@
+#layout-preview {
+  clear: both;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px;
+}
+#layout-preview .layout-preview {
+  margin-left: 160px;
+  background: #fdfdfd;
+  border: solid 1px #eee;
+}
+#layout-preview .no-container {
+  text-align: center;
+}
+#layout-preview .off > [data-role="container"] {
+  display: none;
+}
+#layout-preview .off.col {
+  display: none;
+}

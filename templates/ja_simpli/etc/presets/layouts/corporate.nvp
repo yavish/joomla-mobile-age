@@ -1,0 +1,101 @@
+Corporate style
+layoutContainer: 1
+layoutEnable_header: 1
+layoutContainer_header: 
+layoutBackground_header: 
+layoutSticky_header: 0
+layoutWidth_header_left: 3
+layoutEnable_header_right: 1
+layoutPos_header_right: banner-top
+layoutWidth_header_right: 
+layoutEnable_nav: 1
+layoutContainer_nav: 
+layoutBackground_nav: 
+layoutSticky_nav: 0
+layoutPos_nav_left: position-1
+layoutWidth_nav_left: 9
+layoutEnable_nav_right: 0
+layoutPos_nav_right: position-0
+layoutWidth_nav_right: 
+layoutEnable_top_1: 1
+layoutName_top_1: 
+layoutPos_top_1: topsl-1
+layoutWidth_top_1: 
+layoutClass_top_1: bg-image,no-repeat,cover
+layoutTitle_top_1: 
+layoutDesc_top_1: 
+layoutContainer_top_1: 0
+layoutBackground_top_1: images/demo/background/bg-1.jpg
+layoutEnable_top_2: 1
+layoutName_top_2: 
+layoutPos_top_2: topsl-2
+layoutWidth_top_2: 
+layoutClass_top_2: grey-bg
+layoutTitle_top_2: 
+layoutDesc_top_2: 
+layoutContainer_content: 
+layoutBackground_top_2: 
+layoutEnable_top_3: 0
+layoutName_top_3: top-3
+layoutPos_top_3: top-3
+layoutWidth_top_3: 
+layoutTitle_top_3: 
+layoutDesc_top_3: 
+layoutContainer_top_3: 
+layoutBackground_top_3: 
+layoutEnable_top_4: 0
+layoutName_top_4: 
+layoutPos_top_4: top-4
+layoutWidth_top_4: 
+layoutTitle_top_4: 
+layoutDesc_top_4: 
+layoutContainer_top_4: 
+layoutBackground_top_4: 
+layoutEnable_content: 1
+layoutPosition_content: left
+layoutBackground_content: 
+layoutEnable_col_1: 1
+layoutPos_col_1: position-7
+layoutWidth_col_1: 3
+layoutEnable_col_2: 1
+layoutPos_col_2: position-5
+layoutWidth_col_2: 3
+layoutEnable_bot_1: 1
+layoutName_bot_1: 
+layoutPos_bot_1: botsl-1
+layoutWidth_bot_1: 
+layoutTitle_bot_1: 
+layoutDesc_bot_1: 
+layoutContainer_bot_1: 
+layoutBackground_bot_1: 
+layoutEnable_bot_2: 1
+layoutName_bot_2: 
+layoutPos_bot_2: botsl-2
+layoutWidth_bot_2: 
+layoutClass_bot_2: grey-bg
+layoutTitle_bot_2: Customer testimonials
+layoutDesc_bot_2: Interdum urna cursus pretium Curabitur turpis nunc ligula eu dictumst.
+layoutContainer_bot_2: 
+layoutBackground_bot_2: 
+layoutEnable_bot_3: 1
+layoutName_bot_3: 
+layoutPos_bot_3: botsl-3
+layoutWidth_bot_3: 
+layoutClass_bot_3: blue-bg
+layoutTitle_bot_3: 
+layoutDesc_bot_3: 
+layoutContainer_bot_3: 
+layoutBackground_bot_3: 
+layoutEnable_bot_4: 0
+layoutName_bot_4: 
+layoutPos_bot_4: bot-3
+layoutWidth_bot_4: 
+layoutTitle_bot_4: 
+layoutDesc_bot_4: 
+layoutContainer_bot_4: 
+layoutBackground_bot_4: 
+layoutEnable_footer: 1
+layoutPos_footer: footer
+layoutWidth_footer: 
+layoutContainer_footer: 
+layoutBackground_footer: 

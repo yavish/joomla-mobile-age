@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.0.0" type="plugin" group="captcha" method="upgrade" >
+	<name>PLG_CAPTCHA_PHONECAPTCHA</name>
+	<version>1.0.0</version>
+	<creationDate>2015-05-27</creationDate>
+	<author>ZMAX团队</author>
+	<authorEmail>zhang19min88@163.com</authorEmail>
+	<authorUrl>http://www.zmax99.com</authorUrl>
+	<copyright>南宁市程序人软件科技有限责任公司保留所有权利</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<description>PLG_PHONECAPTCHA_DESCRIPTION</description>
+	<files>
+		<filename plugin="phonecaptcha">phonecaptcha.php</filename>
+		<filename >index.html</filename>
+		<folder>js</folder>
+		<folder>css</folder>
+		<folder>language</folder>
+	</files>
+	<languages folder="language" >
+		<language tag="zh-CN">zh-CN/zh-CN.plg_captcha_phonecaptcha.ini</language>
+		<language tag="zh-CN">zh-CN/zh-CN.plg_captcha_phonecaptcha.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_captcha_phonecaptcha.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_captcha_phonecaptcha.sys.ini</language>
+	</languages>
+	<config>
+    </config>
+	<updateservers>
+		<server type="extension" priority="1" name="ZMAX PHONE Captcha">
+			http://www.zmax99.com/autoupdate/phonecaptcha_auto_update.xml
+		</server>
+	</updateservers>
+</extension>

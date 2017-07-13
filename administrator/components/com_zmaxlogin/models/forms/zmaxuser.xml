@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form>
+		<fieldset name="zmaxform"
+				  label="COM_ZMAXFORM"
+			>
+			<field
+				type="hidden"
+				name="id"
+			/>
+			<field
+				type="radio"
+				name="type"
+				label="登记类型"
+				description="登记类型"
+				default="模拟帐号"
+				required="true"
+				
+	
+			>
+				<option value="模拟帐号" >模拟帐号</option>
+				<option value="开户预约" >开户预约</option>
+				<option value="咨询" >咨询</option>
+			</field>
+			
+			<field
+				type="text"
+				name="name"
+				label="姓名"
+				description="姓名"
+				default=""
+				required="true"
+				size="10"
+			/>
+			
+			<field
+				type="text"
+				name="phone"
+				label="手机"
+				description="手机号码"
+				default=""
+				required="true"
+				size="10"
+			/>
+			
+			<field
+				type="text"
+				name="qq"
+				label="QQ号"
+				description="QQ号"
+				default=""
+				size="10"
+			/>
+		</fieldset>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+
+.title {
+    font-weight: bolder;
+}
+
+.use ul li {
+    list-style-type: decimal;
+}
+
+
+.video p {
+    color: #f89406;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.video > div {
+    padding-left: 50px;
+}
+
+#zmaxlogin #dashboard-icons .btn {
+  background-image: none;
+  border-color: transparent;
+  box-shadow: none;
+}
+#zmaxlogin #dashboard-icons .btn {
+  border-radius: 3px;
+  min-height: 64px;
+  min-width: 72px;
+  overflow: hidden;
+}

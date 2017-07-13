@@ -1,0 +1,78 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       SIMPLI - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2016 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+
+//
+// Insert Font Awesome Icons
+// Default is Angle Right [http://fortawesome.github.io/Font-Awesome/icon/angle-right/]
+.icon(@icon: "\f105") {
+  content: @icon;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+}
+
+//
+// Insert Typography Separator
+// Default is En Dash [https://www.typewolf.com/cheatsheet]
+.separator(@sep: "–") {
+  content: @sep;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+//
+// Vertical Align Anything
+// Note: In some case, the Container need Height to working properly
+.vertical-align(@position: relative) {
+  position: @position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+//
+// Flat out Bootstrap 2 Default Styles
+.flatBS() {
+  background-image: none;
+  text-shadow: none;
+  box-shadow: none;
+  filter: e(%("progid:DXImageTransform.Microsoft.gradient(enabled = false)"));
+}
+
+//
+// Fixed LESS Compiler error
+#grid {
+  .core  {
+    .span(@gridColumns) {
+      width: (@gridColumnWidth * @gridColumns) + (@gridGutterWidth * (@gridColumns - 1));
+    }
+  }
+}
+
+//
+// Improve .makeColumn and .makeRow to work with 1200px responsive grid
+.makeRow() {
+  @media (min-width: 1200px) {
+    margin-left: @gridGutterWidth1200 * -1;
+    .clearfix();
+  }
+}
+
+.makeColumn(@columns: 1, @offset: 0) {
+  @media (min-width: 1200px) {
+    margin-left: (@gridColumnWidth1200 * @offset) + (@gridGutterWidth1200 * (@offset - 1)) + (@gridGutterWidth1200 * 2);
+    width: (@gridColumnWidth1200 * @columns) + (@gridGutterWidth1200 * (@columns - 1));
+  }
+}

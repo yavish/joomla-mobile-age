@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="system_setting" label="COM_ZMAXLOGIN_CONFIG_SYSTEMSETTING" description="COM_ZMAXLOGIN_CONFIG_SYSTEMSETTING_DESC">
+		<field name="name_type" type="list" default="system_auto" label="COM_ZMAXLOGIN_CONFIG_NAME_TYPE_LABEL" description="COM_ZMAXLOGIN_CONFIG_NAME_TYPE_DESC">
+			<option value="system_auto">OPTION_NAME_TYPE_SYSTEM_AUTO</option>
+			<option value="three_part_name">OPTION_NAME_TYPE_THREE_PART_NAME</option>
+		</field>
+		
+		<field name="name_prefix" type="text" value="" label="COM_ZMAXLOGIN_CONFIG_NAME_PREFIX_LABEL" default="" description="COM_ZMAXLOGIN_CONFIG_NAME_PREFIX_DESC"/>
+		<field name="name_suffix" type="text" value="zmax" label="COM_ZMAXLOGIN_CONFIG_NAME_SUFFIX_LABEL" default="zmax" description="COM_ZMAXLOGIN_CONFIG_NAME_SUFFIX_DESC"/>
+		
+		
+		<field name="need_email" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_ZMAXLOGIN_CONFIG_NEED_EMAIL_LABEL" description="COM_ZMAXLOGIN_CONFIG_NEED_EMAIL_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field name="debug" type="radio" class="btn-group btn-group-yesno" default="0" label="COM_ZMAXLOGIN_CONFIG_DEBUG_LABEL" description="COM_ZMAXLOGIN_CONFIG_DEBUG_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field name="newer_usergroup" type="usergroup" label="COM_ZMAXLOGIN_CONFIG_GUEST_USER_GROUP_LABEL" description="COM_ZMAXLOGIN_CONFIG_GUEST_USER_GROUP_DESC" multiple="false" default="2"/>
+	</fieldset>
+	<fieldset name="notify_config" label="COM_ZMAXLOGIN_CONFIG_NOTIFY_CONFIG_LABEL" description="COM_ZMAXLOGIN_CONFIG_NOTIFY_CONFIG_DESC">
+		<field name="enable_email" type="radio" class="btn-group btn-group-yesno" default="1" label="COM_ZMAXLOGIN_CONFIG_ENABLE_EMAIL_LABEL" description="COM_ZMAXLOGIN_CONFIG_ENABLE_EMAIL_DESC">
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field name="email" type="text" default="" label="COM_ZMAXLOGIN_CONFIG_EMAIL_LABEL" description="COM_ZMAXLOGIN_CONFIG_EMAIL_DESC" size="40"/>
+		<field name="email_subject" type="text" default="社交账号注册网站" label="COM_ZMAXLOGIN_CONFIG_EMAIL_SUBJECT_LABEL" description="COM_ZMAXLOGIN_CONFIG_EMAIL_SUBJECT_DESC" />
+		<field name="email_body"  class="span6" col="5" type="textarea" default="账号__##USER##__使用__##LOGINTYPE##__注册了你的网站(__##SITENAME##__)" label="COM_ZMAXLOGIN_CONFIG_EMAIL_BODY_LABEL" description="COM_ZMAXLOGIN_CONFIG_EMAIL_BODY_DESC" />
+	</fieldset>
+	<fieldset name="active" label="COM_ZMAXLOGIN_CONFIG_ACTIVE_LAEBL" description="COM_ZMAXLOGIN_CONFIG_ACTIVE_DESC">
+		<field name="active_note"
+				type="note"
+				label="COM_ZMAXLOGIN_CONFIG_ACTIVE_NOTE_LAEBL"
+				description="COM_ZMAXLOGIN_CONFIG_ACTIVE_NOTE_DESC"
+				class="alert alert-info"
+				close="true"
+		/>
+		<field name="active_email"
+				type="text"
+				label="COM_ZMAXLOGIN_CONFIG_ACTIVE_EMAIL_LAEBL"
+				description="COM_ZMAXLOGIN_CONFIG_ACTIVE_EMAIL_DESC"
+				default=""
+		/>
+		<field name="active_code"
+				type="text"
+				label="COM_ZMAXLOGIN_CONFIG_ACTIVE_CODE_LABEL"
+				description="COM_ZMAXLOGIN_CONFIG_ACTIVE_CODE_DESC"
+		/>
+		<field name="active_domain"
+				type="text"
+				label="COM_ZMAXLOGIN_CONFIG_ACTIVE_DOMAIN_LABEL"
+				description="COM_ZMAXLOGIN_CONFIG_ACTIVE_DOMAIN_DESC"
+				default=""
+		/>
+	</fieldset>
+	<fieldset name="permissions" label="COM_ZMAXLOGIN_CONFIG_PERMISSIONS_LABEL" description="COM_ZMAXLOGIN_CONFIG_PERMISSIONS_DESC" >
+		<field name="rules" type="rules" lable="COM_ZMAXLOGIN_CONFIG_PERMISSIONS_LABEL" filter="rules" component="com_zmaxshop" section="component">
+		</field>
+	</fieldset>
+</config>

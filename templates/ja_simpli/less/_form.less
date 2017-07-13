@@ -1,0 +1,227 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       SIMPLI - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2016 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+
+
+// ------------------------------------------------------
+// FORM ELEMENTS
+// ------------------------------------------------------
+
+//
+// GENERIC STYLES (forms.less)
+// --------------------------------------------------
+
+form {
+}
+
+fieldset {
+  .form-group {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    > div,
+    > label,
+    > span {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+legend {
+}
+
+label {
+}
+
+
+// Adjust output element
+output {
+}
+
+// Common form controls
+// --------------------
+// Shared size and type resets for form controls. Apply `.form-control` to any
+// of the following form controls:
+//
+// select
+// textarea
+// input[type="text"]
+// input[type="password"]
+// input[type="datetime"]
+// input[type="datetime-local"]
+// input[type="date"]
+// input[type="month"]
+// input[type="time"]
+// input[type="week"]
+// input[type="number"]
+// input[type="email"]
+// input[type="url"]
+// input[type="search"]
+// input[type="tel"]
+// input[type="color"]
+.form-control {
+
+  // Placeholder
+  .placeholder();
+
+  // Disabled and read-only inputs
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+  }
+
+  // Reset height for `textarea`s
+  textarea& {
+    height: auto;
+  }
+}
+
+// Checkboxes and radios
+// ---------------------
+.radio,
+.checkbox {
+  label {
+    display: inline;
+  }
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+}
+
+.radio + .radio,
+.checkbox + .checkbox {
+}
+
+// Radios and checkboxes on same line
+.radio-inline,
+.checkbox-inline {
+}
+
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+}
+
+
+// Form control sizing
+// -------------------
+.input-sm {
+}
+
+.input-lg {
+}
+
+
+// Form control feedback states
+// ----------------------------
+// Apply contextual and semantic states to individual form controls.
+
+// Warning
+.has-warning {
+}
+// Error
+.has-error {
+}
+// Success
+.has-success {
+}
+
+
+// Static form control text
+// ------------------------
+// Apply class to a `p` element to make any string of text align with labels in
+// a horizontal form layout.
+
+.form-control-static {
+  margin-bottom: 0; // Remove default margin from `p`
+}
+
+
+// Help text
+// ---------
+// Apply to any element you wish to create light text for placement immediately
+// below a form control. Use for general help, formatting, or instructional text.
+
+.help-block {
+}
+
+// Inline forms
+// ------------
+// Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+// forms begin stacked on extra small (mobile) devices and then go inline when
+// viewports reach <768px.
+//
+// Requires wrapping inputs and labels with `.form-group` for proper display of
+// default HTML form controls and our custom form controls (e.g., input groups).
+//
+// Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
+
+.form-inline {
+
+  @media (min-width: @screen-sm) {
+
+    .form-group  {
+      display: inline-block;
+    }
+
+    // In navbar-form, allow folks to *not* use `.form-group`
+    .form-control {
+      display: inline-block;
+    }
+
+    // Remove default margin on radios/checkboxes that were used for stacking, and
+    // then undo the floating of radios and checkboxes to match (which also avoids
+    // a bug in WebKit: https://github.com/twbs/bootstrap/issues/1969).
+    .radio,
+    .checkbox {
+    }
+
+    .radio input[type="radio"],
+    .checkbox input[type="checkbox"] {
+      float: none;
+    }
+
+  }
+
+  // End
+}
+
+
+//
+// BUTTONS (buttons.less)
+// --------------------------------------------------
+
+// Base styles
+// --------------------------------------------------
+
+// Core styles
+.btn {
+  box-shadow: none;
+  padding: (@global-padding / 3) @global-padding;
+
+  &:focus {
+  }
+
+  &:hover,
+  &:focus {
+  }
+
+  &:active,
+  &.active {
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+  }
+
+}

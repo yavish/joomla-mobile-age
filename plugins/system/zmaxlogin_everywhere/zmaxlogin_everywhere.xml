@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_zmaxlogin_everywhere</name>
+	<author>ZMAX团队</author>
+	<creationDate>2016-11-04</creationDate>
+	<copyright>南宁市程序人软件科技有限责任公司保留所有权利！</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>zhang19min88@163.com</authorEmail>
+	<authorUrl>http://www.zmax99.com</authorUrl>
+	<version>1.0.0</version>
+	<description>
+		<![CDATA[			
+			  <h2>本插件允许你在网站的任何页面放置第三方登陆。你可以使用自定义HTML代码来订制第三方登陆模块的显示效果.</h2>
+			 
+				
+			  <p class="text-success">
+					触发系统执行第三方登陆的方法非常的简单只需要两个设置.
+			  </p>
+			  <ul>
+				<li>第一, 在你需要触发的元素上加上类名 system-zmax-login-social-btn 。</li>
+				<li>第二, 该给元素增加type属性。type属性代表索要所要触发的登陆类型。type的值可以为qq  weixin  weibo等等</li>
+			  </ul>
+			  <p>
+				举一个例子，你如果想触发QQ登陆	
+				<pre><_a class="system-zmax-login-social-btn" type="qq">这里可以放图片<_/a></pre>
+			  </p>
+			]]>
+	</description>
+	<files>
+		<filename plugin="zmaxlogin_everywhere">zmaxlogin_everywhere.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+</extension>

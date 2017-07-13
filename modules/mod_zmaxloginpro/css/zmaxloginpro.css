@@ -1,0 +1,21 @@
+.zmaxui #joomla-login .input-small {
+    font-size: small;
+    height: auto;
+}
+
+.zmaxui #joomla-login .add-on {
+    height: inherit;
+}
+
+
+#social-login ul li {
+    border-bottom: 1px solid #dedede;
+    list-style: outside none none;
+    margin: 5px;
+    max-width: 150px;
+    padding: 5px;
+}
+
+#social-login .icon img {
+    max-height: 50px;
+}

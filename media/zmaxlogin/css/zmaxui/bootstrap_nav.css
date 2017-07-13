@@ -1,0 +1,215 @@
+.zmaxui .zmax-nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.zmaxui .zmax-nav > li {
+  position: relative;
+  display: block;
+}
+.zmaxui .zmax-nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.zmaxui .zmax-nav > li > a:hover,
+.zmaxui .zmax-nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+.zmaxui .zmax-nav > li.zmax-disabled > a {
+  color: #777777;
+}
+.zmaxui .zmax-nav > li.zmax-disabled > a:hover,
+.zmaxui .zmax-nav > li.zmax-disabled > a:focus {
+  color: #777777;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+.zmaxui .zmax-nav .zmax-open > a,
+.zmaxui .zmax-nav .zmax-open > a:hover,
+.zmaxui .zmax-nav .zmax-open > a:focus {
+  background-color: #eeeeee;
+  border-color: #337ab7;
+}
+.zmaxui .zmax-nav .zmax-nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+.zmaxui .zmax-nav > li > a > img {
+  max-width: none;
+}
+.zmaxui .zmax-nav-tabs {
+  border-bottom: 1px solid #dddddd;
+}
+.zmaxui .zmax-nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.zmaxui .zmax-nav-tabs > li > a {
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.zmaxui .zmax-nav-tabs > li > a:hover {
+  border-color: #eeeeee #eeeeee #dddddd;
+}
+.zmaxui .zmax-nav-tabs > li.zmax-active > a,
+.zmaxui .zmax-nav-tabs > li.zmax-active > a:hover,
+.zmaxui .zmax-nav-tabs > li.zmax-active > a:focus {
+  color: #555555;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+.zmaxui .zmax-nav-tabs.zmax-nav-justified {
+  width: 100%;
+  border-bottom: 0;
+}
+.zmaxui .zmax-nav-tabs.zmax-nav-justified > li {
+  float: none;
+}
+.zmaxui .zmax-nav-tabs.zmax-nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.zmaxui .zmax-nav-tabs.zmax-nav-justified > .zmax-dropdown .zmax-dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .zmaxui .zmax-nav-tabs.zmax-nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .zmaxui .zmax-nav-tabs.zmax-nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.zmaxui .zmax-nav-tabs.zmax-nav-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.zmaxui .zmax-nav-tabs.zmax-nav-justified > .zmax-active > a,
+.zmaxui .zmax-nav-tabs.zmax-nav-justified > .zmax-active > a:hover,
+.zmaxui .zmax-nav-tabs.zmax-nav-justified > .zmax-active > a:focus {
+  border: 1px solid #dddddd;
+}
+@media (min-width: 768px) {
+  .zmaxui .zmax-nav-tabs.zmax-nav-justified > li > a {
+    border-bottom: 1px solid #dddddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .zmaxui .zmax-nav-tabs.zmax-nav-justified > .zmax-active > a,
+  .zmaxui .zmax-nav-tabs.zmax-nav-justified > .zmax-active > a:hover,
+  .zmaxui .zmax-nav-tabs.zmax-nav-justified > .zmax-active > a:focus {
+    border-bottom-color: #ffffff;
+  }
+}
+.zmaxui .zmax-nav-pills > li {
+  float: left;
+}
+.zmaxui .zmax-nav-pills > li > a {
+  border-radius: 4px;
+}
+.zmaxui .zmax-nav-pills > li + li {
+  margin-left: 2px;
+}
+.zmaxui .zmax-nav-pills > li.zmax-active > a,
+.zmaxui .zmax-nav-pills > li.zmax-active > a:hover,
+.zmaxui .zmax-nav-pills > li.zmax-active > a:focus {
+  color: #ffffff;
+  background-color: #337ab7;
+}
+.zmaxui .zmax-nav-stacked > li {
+  float: none;
+}
+.zmaxui .zmax-nav-stacked > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+.zmaxui .zmax-nav-justified {
+  width: 100%;
+}
+.zmaxui .zmax-nav-justified > li {
+  float: none;
+}
+.zmaxui .zmax-nav-justified > li > a {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.zmaxui .zmax-nav-justified > .zmax-dropdown .zmax-dropdown-menu {
+  top: auto;
+  left: auto;
+}
+@media (min-width: 768px) {
+  .zmaxui .zmax-nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+  .zmaxui .zmax-nav-justified > li > a {
+    margin-bottom: 0;
+  }
+}
+.zmaxui .zmax-nav-tabs-justified {
+  border-bottom: 0;
+}
+.zmaxui .zmax-nav-tabs-justified > li > a {
+  margin-right: 0;
+  border-radius: 4px;
+}
+.zmaxui .zmax-nav-tabs-justified > .zmax-active > a,
+.zmaxui .zmax-nav-tabs-justified > .zmax-active > a:hover,
+.zmaxui .zmax-nav-tabs-justified > .zmax-active > a:focus {
+  border: 1px solid #dddddd;
+}
+@media (min-width: 768px) {
+  .zmaxui .zmax-nav-tabs-justified > li > a {
+    border-bottom: 1px solid #dddddd;
+    border-radius: 4px 4px 0 0;
+  }
+  .zmaxui .zmax-nav-tabs-justified > .zmax-active > a,
+  .zmaxui .zmax-nav-tabs-justified > .zmax-active > a:hover,
+  .zmaxui .zmax-nav-tabs-justified > .zmax-active > a:focus {
+    border-bottom-color: #ffffff;
+  }
+}
+.zmaxui .zmax-tab-content > .zmax-tab-pane {
+  display: none;
+}
+.zmaxui .zmax-tab-content > .zmax-active {
+  display: block;
+}
+.zmaxui .zmax-nav-tabs .zmax-dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.zmaxui .zmax-clearfix:before,
+.zmaxui .zmax-clearfix:after,
+.zmaxui .zmax-nav:before,
+.zmaxui .zmax-nav:after {
+  content: " ";
+  display: table;
+}
+.zmaxui .zmax-clearfix:after,
+.zmaxui .zmax-nav:after {
+  clear: both;
+}
+
+/*这个是我自己添加的*/
+.zmax-tab-content .zmax-tab-panel {
+    display: none;
+}
+.zmaxui .zmax-nav-tabs li > a {
+    cursor: pointer;
+}
+.zmaxui ul.zmax-nav.zmax-nav-tabs {
+    margin: 0;
+}
+

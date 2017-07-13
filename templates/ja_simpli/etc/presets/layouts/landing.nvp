@@ -1,0 +1,102 @@
+Landing Page style
+layoutContainer: 1
+layoutEnable_header: 1
+layoutContainer_header: 1
+layoutBackground_header: 
+layoutSticky_header: 0
+layoutWidth_header_left: 4
+layoutEnable_header_right: 1
+layoutPos_header_right: social-links
+layoutWidth_header_right: 8
+layoutEnable_nav: 1
+layoutContainer_nav: 
+layoutBackground_nav: 
+layoutSticky_nav: 0
+layoutPos_nav_left: position-1
+layoutWidth_nav_left: 12
+layoutEnable_nav_right: 0
+layoutPos_nav_right: landing-topnav
+layoutWidth_nav_right: 4
+layoutEnable_top_1: 1
+layoutName_top_1: hero
+layoutPos_top_1: lp-top-1
+layoutWidth_top_1: 
+layoutClass_top_1: blue-bg
+layoutTitle_top_1: 
+layoutDesc_top_1: 
+layoutContainer_top_1: 
+layoutBackground_top_1: 
+layoutEnable_top_2: 1
+layoutName_top_2: features
+layoutPos_top_2: lp-top-2
+layoutWidth_top_2: 
+layoutClass_top_2: grey-bg
+layoutTitle_top_2: 
+layoutDesc_top_2: 
+layoutContainer_content: 
+layoutBackground_top_2: 
+layoutEnable_top_3: 1
+layoutName_top_3: framework
+layoutPos_top_3: lp-top-3
+layoutWidth_top_3: 
+layoutTitle_top_3: Architecture & Technologies
+layoutDesc_top_3: The Free Joomla template is built with new web technologies: Bootstrap, Font awesome, LESS.\n
+layoutContainer_top_3: 
+layoutBackground_top_3: 
+layoutEnable_top_4: 1
+layoutName_top_4: testimonials
+layoutPos_top_4: lp-top-4
+layoutWidth_top_4: 
+layoutClass_top_4: grey-bg
+layoutTitle_top_4: 
+layoutDesc_top_4: 
+layoutContainer_top_4: 
+layoutBackground_top_4: 
+layoutEnable_content: 0
+layoutPosition_content: left
+layoutBackground_content: 
+layoutEnable_col_1: 1
+layoutPos_col_1: position-7
+layoutWidth_col_1: 3
+layoutEnable_col_2: 1
+layoutPos_col_2: position-5
+layoutWidth_col_2: 3
+layoutEnable_bot_1: 1
+layoutName_bot_1: 
+layoutPos_bot_1: lp-bot-1
+layoutWidth_bot_1: 
+layoutClass_bot_1: no-repeat,full-width
+layoutTitle_bot_1: 
+layoutDesc_bot_1: 
+layoutContainer_bot_1: 
+layoutBackground_bot_1: images/demo/background/bg-3.jpg
+layoutEnable_bot_2: 1
+layoutName_bot_2: gallery
+layoutPos_bot_2: lp-bot-2
+layoutWidth_bot_2: 
+layoutTitle_bot_2: Images Gallery
+layoutDesc_bot_2: Check out JA Simpli Front-end & Back-end image gallery
+layoutContainer_bot_2: 
+layoutBackground_bot_2: 
+layoutEnable_bot_3: 1
+layoutName_bot_3: gallery
+layoutPos_bot_3: lp-bot-3
+layoutWidth_bot_3: 
+layoutClass_bot_3: grey-bg
+layoutTitle_bot_3: FAQs
+layoutDesc_bot_3: Sample section descriptions
+layoutContainer_bot_3: 
+layoutBackground_bot_3: 
+layoutEnable_bot_4: 1
+layoutName_bot_4: faqs
+layoutPos_bot_4: lp-bot-4
+layoutWidth_bot_4: 
+layoutTitle_bot_4: Subscribe to Simpli mailing list for early access
+layoutDesc_bot_4: 
+layoutContainer_bot_4: 
+layoutBackground_bot_4: 
+layoutEnable_footer: 1
+layoutPos_footer: footer
+layoutWidth_footer: 
+layoutContainer_footer: 1
+layoutBackground_footer: 

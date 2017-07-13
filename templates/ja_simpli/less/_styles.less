@@ -1,0 +1,1157 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       SIMPLI - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2016 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+
+
+// ------------------------------------
+// Main Styles
+// ------------------------------------
+
+//
+// Header
+// ------------------------------------
+
+#header {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-top: @global-padding / 2;
+  padding-bottom: @global-padding / 2;
+
+  // Style on mobile
+  @media (max-width: @screen-sm) {
+    margin-left: -@global-margin;
+    margin-right: -@global-margin;
+    padding-left: @global-padding;
+    padding-right: @global-padding;
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .menu {
+    margin-top: @global-margin / 1.5;
+    margin-bottom: 0;
+    text-align: right;
+
+    li {
+      display: inline-block;
+      padding: 0 @global-padding / 1.5;
+
+      & > a {
+        font-weight: 500;
+        font-size: @fontSizeSmall;
+        text-transform: uppercase;
+
+        &:hover, &:focus, &:active {
+          background: transparent;
+        }
+      }
+    }
+  }
+
+  // Sticky menu
+  &.stick-on-top {
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 2100;
+  }
+}
+
+
+//
+// Logo
+// ----
+.navbar-brand {
+  color: @headingsColor;
+  font-family: @serifFontFamily;
+  height: auto;
+  text-transform: uppercase;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media (max-width: @screen-xs) {
+    display: block;
+    margin-bottom: @global-margin / 2;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  // Styles on Desktop
+  @media only screen and (min-width: @grid-float-breakpoint) {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+  }
+
+  // Link States
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+  }
+
+  strong {
+    display: inline-block;
+    font-size: @font-size-h1;
+    line-height: 1;
+  }
+
+  .slogan {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    display: block;
+    letter-spacing: .5;
+    opacity: .5;
+  }
+
+  // Styles on Desktop
+  @media only screen and (min-width: @grid-float-breakpoint) {
+    float: left;
+  }
+
+  // Logo image
+  &.logo-image {
+    line-height: 90px;
+    max-width: 200px;
+  }
+
+}
+
+
+//
+// Head Banner
+#header .banner {
+  // Styles on Desktop
+  @media only screen and (min-width: @grid-float-breakpoint) {
+    float: right;
+  }
+}
+
+
+//
+// Search
+.navbar-form {
+  background: @grayDark;
+  color: @grayLighter;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  height: @navbarHeight;
+
+  // Styles on Breakpoint
+  @media (max-width: @grid-float-breakpoint) {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-left: 1px solid @gray;
+    width: auto;
+  }
+
+  // Styles on Desktop
+  @media only screen and (min-width: @grid-float-breakpoint) {
+    .makeColumn(3);
+    .pull-right();
+  }
+
+  .search {
+    height: @navbarHeight;
+    margin-top: 0;
+
+    // The icon
+    &:before {
+      .icon("\f002");
+      float: left;
+      padding-left: @global-padding;
+      line-height: @navbarHeight;
+    }
+
+    // The form
+    form {
+      float: left;
+      margin: 0;
+    }
+
+    label {
+      display: none;
+    }
+
+    .inputbox {
+      background: transparent;
+      color: #fff;
+      border: 0;
+      border-radius: 0;
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      height: @navbarHeight;
+      .flatBS();
+      outline: none;
+      width: 160px;
+
+      @media (min-width: @screen-md) {
+        width: 145px;
+      }
+
+      // Style on Desktop
+      @media screen and (min-width: @screen-lg) {
+        width: auto;
+      }
+    }
+  }
+
+}
+
+
+//
+// Main navigation
+// ------------------------------------
+#mainnav {
+  position: relative;
+  z-index: 2000;
+
+  // Style on mobile
+  @media (max-width: @screen-sm) {
+    margin-left: -@global-margin;
+    margin-right: -@global-margin;
+  }
+
+  &.stick-on-top {
+    width: 100%;
+  }
+
+  &.affix {
+    position: fixed;
+  }
+}
+
+
+//
+// Top spotlight
+// ------------------------------------
+.top-sl {
+  .container {
+    padding: (@global-padding * 2) 0;
+  }
+
+  // Spotlight extra class
+  &.no-padding {
+    .container {
+      padding: 0;
+    }
+  }
+
+  &.no-padding-top {
+    .container {
+      padding-top: 0;
+    }
+  }
+
+  &.no-padding-bot {
+    .container {
+      padding-bottom: 0;
+    }
+  }
+
+  &.grey-bg {
+    background-color: @grayLightest;
+    color: @textColor;
+  }
+
+  &.blue-bg {
+    background-color: #0049a0;
+    color: @white;
+  }
+
+  // Styles on Tablet & Mobile
+  @media only screen and (max-width: @grid-float-breakpoint) {
+    .unit-text {
+      width: 100%;
+    }
+
+    .unit-image {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .hero-unit {
+    background: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    color: @white;
+
+    h1 {
+      line-height: 1.1;
+      margin-bottom: @global-margin;
+    }
+
+    p {
+      margin-bottom: @global-margin * 1.5;
+    }
+
+    // Styles on Desktop
+    @media only screen and (max-width: @grid-float-breakpoint) {
+      h1 {
+        font-size: @font-size-h2;
+      }
+    }
+  }
+
+  .ja-module {
+    margin-bottom: 0;
+  }
+}
+
+
+//
+// Mainbody
+// ------------------------------------
+.mainbody-inner {
+  padding-top: @global-padding;
+  padding-bottom: @global-padding;
+}
+
+// Styles on Desktop
+@media only screen and (max-width: @grid-float-breakpoint) {
+  .content {
+    box-sizing: border-box;
+    padding-right: @gridColumnWidth / 2;
+    width: 100%;
+  }
+
+  .sidebar {
+    box-sizing: border-box;
+    padding-right: @gridColumnWidth / 2;
+    width: 100%;
+  }
+}
+
+// Styles on Desktop
+@media only screen and (min-width: @grid-float-breakpoint) {
+
+  .mainbody-inner {
+    padding-top: @global-padding * 2;
+    padding-bottom: @global-padding * 2;
+  }
+
+  // 2 Columns
+  .bd-2-cols {
+    #content {
+      .makeColumn(9);
+    }
+
+    .sidebar {
+      .makeColumn(3);
+    }
+  }
+
+  // 3 Columns
+  .bd-3-cols {
+    #content {
+      .makeColumn(6);
+    }
+    .sidebar {
+      .makeColumn(3);
+    }
+  }
+
+  // 1 Column (full)
+  .bd-1-col {
+    #content {
+      .makeColumn(12);
+    }
+  }
+
+  // Content Left
+  .bd-ct-l {}
+
+  // Content Right
+  .bd-ct-r {
+    #content {
+      .pull-right();
+    }
+  }
+}
+
+
+//
+// Sidebar
+// ------------------------------------
+.sidebar {
+  // Styles on Breakpoint
+  @media only screen and (max-width: @grid-float-breakpoint) {
+    margin-top: @global-padding;
+    width: 100%;
+  }
+}
+
+.sidebar-inner {
+  font-size: @fontSizeSmall;
+}
+
+
+// Spotlight title
+.section-title {
+  font-size: @font-size-h2;
+  padding-bottom: @global-padding / 2;
+  margin: 0 0 @global-margin;
+  position: relative;
+  text-align: center;
+
+  &:before {
+    background-color: @brand-primary;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -30px;
+    width: 60px;
+  }
+}
+
+.section-desc {
+  color: @grayLight;
+  font-size: @fontSizeLarge;
+  margin: 0 20% (@global-margin * 3);
+  text-align: center;
+
+  @media (max-width: @screen-sm) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.no-container {
+  .section-title {
+    padding-top: @global-margin * 3;
+  }
+
+  .section-desc {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+}
+
+div.container div.container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+// 
+// Sportlight
+// -----------------
+
+// Border class suffix
+// -------------------
+.border {
+  border-top: 1px solid @border-color;
+  border-bottom: 1px solid @border-color;
+}
+
+.border-top {
+  border-top: 1px solid @border-color;
+}
+
+.border-bot {
+  border-bottom: 1px solid @border-color;
+}
+
+// Background color class suffix
+// -----------------------------
+.bg-image,
+.bg-color {
+  // Style on mobile
+  @media (max-width: @screen-sm) {
+    margin-left: -@global-margin;
+    margin-right: -@global-margin;
+    padding-left: @global-padding;
+    padding-right: @global-padding;    
+  }
+}
+
+.grey-bg,
+.blue-bg,
+.dark-bg {
+  // Style on mobile
+  @media (max-width: @screen-sm) {
+    margin-left: -@global-margin;
+    margin-right: -@global-margin;
+    padding-left: @global-padding;
+    padding-right: @global-padding;    
+  }
+}
+
+.grey-bg {
+  background-color: @grayLightest;
+}
+
+.blue-bg {
+  background-color: @blue;
+  color: @white;
+
+  .moduletable h3 {
+    color: @white;
+  }
+}
+
+.dark-bg {
+  background-color: @grayDarker;
+  color: @grayLight;
+  margin-right: -@global-margin;
+  margin-left: -@global-margin;
+
+  @media screen and (min-width: @grid-float-breakpoint) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  a {
+    color: @grayLight;
+
+    &:hover, &:focus, &:active {
+      background-color: transparent;
+      color: @white;
+    }
+  }
+
+  .ja-module .module-title {
+    border-color: @grayDark;
+    color: @grayLighter;
+  }
+}
+
+// Padding class suffix
+// --------------------
+.no-padding {
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.no-padding-left {
+  padding-left: 0;
+}
+
+.no-padding-right {
+  padding-right: 0;
+}
+
+.no-padding-top {
+  div.container {
+    padding-top: 0;
+  }
+}
+
+.no-padding-bot {
+  .container {
+    padding-bottom: 0;
+  }
+}
+
+.no-margin-left {
+  margin-left: 0 !important;
+  padding-left: @gridGutterWidth;
+}
+
+.no-margin-right {
+  margin-right: 0 !important;
+}
+
+// Background image property
+// -------------------------
+.no-repeat {
+  background-repeat: no-repeat;
+}
+
+.cover {
+  background-size: cover;
+}
+
+.full-width {
+  background-size: 100% auto;
+  background-position: top center;
+
+  @media (max-width: 1400px) {
+    background-size: auto 100%;
+  }
+
+  @media (max-width: @screen-sm) {
+    background-size: auto;
+  }
+}
+
+.full-height {
+  background-size: auto 100%;
+}
+
+//
+// Bottom spotlight
+// ------------------------------------
+.bot-sl {
+
+  .container {
+    padding: (@global-padding * 3) 0;
+  }
+
+  .ja-module {
+    margin-bottom: 0;
+
+    .module-title {
+      font-weight: 600;
+      font-size: @baseFontSize;
+      margin: 0 0 @global-margin;
+      text-transform: uppercase;
+    }
+  }
+
+  // Navigation
+  // ----------
+  .ja-module .nav > li {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    margin-bottom: @global-margin / 4;
+    padding-bottom: @global-padding / 4;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    & > a {
+      background: none;
+      color: @grayLight;
+      font-weight: 300;
+      padding: 0;
+
+      &:before {
+        display: none;
+      }
+
+      &:hover, &:focus, &:active {
+        color: @white;
+      }
+    }
+  }
+
+  // Style on tablet
+  @media screen and (max-width: @grid-float-breakpoint) {
+    // [class*="span"] {
+    //   box-sizing: border-box;
+    //   margin: 0;
+    //   padding: 0 @global-padding;
+    //   width: 50%;
+    // }
+
+    .ja-module {
+      margin-bottom: @global-margin;
+    }
+  }
+
+  // Style on tablet
+  @media screen and (max-width: @screen-xs) {
+    [class*="span"] {
+      width: 100%;
+    }
+  }
+}
+
+
+//
+// Float position
+// ------------------------------------
+.float-pos {
+  position: fixed;
+  right: 0;
+  padding-right: @global-padding;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .ja-module {
+    margin-bottom: 0;
+  }
+
+  .nav > li {
+    position: relative;
+    height: 22px;
+    margin: 10px 0;
+    width: 20px;
+
+    &:after {
+      border-radius: 50%;
+      border: 2px solid rgba(0,0,0,0.2);
+      content: "";
+      display: block;
+      height: 16px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 16px;
+      z-index: 300;
+    }
+
+    & > a {
+      background-color: transparent;
+      border-radius: 3px 0 0 3px;
+      color: @white;
+      display: inline-block;
+      font-size: @fontSizeSmall;
+      height: 26px;
+      line-height: 26px;
+      padding-left: 15px;
+      padding-right: 40px;
+      position: absolute;
+      top: -3px;
+      right: 0;
+      opacity: 0;
+      outline: none;
+      overflow: hidden;
+      text-align: center;
+      z-index: 200;
+      .transition(all 0.35s);
+
+      &:before {
+        background-color: rgba(0,0,0,0.8);
+        border-radius: 3px;
+        content: "";
+        position: absolute;
+        top: 1px;
+        height: 25px;
+        right: 25px;
+        left: 0;
+        height: 25px;
+        z-index: -1;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        border-left: 4px solid rgba(0,0,0,0.8);
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        height: 0;
+        position: absolute;
+        right: 21px;
+        top: 9px;
+        width: 0;
+      }
+
+      &:hover {
+        z-index: 400;
+      }
+    }
+
+    &:hover {
+      overflow: visible;
+
+      &:after {
+        border-color: @grayDark;
+        background-color: @white;
+      }
+
+      a {
+        opacity: 1;
+        z-index: 400;
+      }
+    }
+
+    &.active {
+      a {
+        .opacity(1);
+      }
+
+      &:after {
+        background-color: @white;
+        border-color: @brand-primary;
+      }
+    }
+  }
+}
+
+//
+// Footer
+// ------------------------------------
+#footer {
+  border-top: 1px solid @border-color;
+  color: @grayLight;
+  font-size: @fontSizeMini;
+
+  // Style on mobile
+  @media (max-width: @screen-sm) {
+    margin-left: -@global-margin;
+    margin-right: -@global-margin;
+    padding-left: @global-padding;
+    padding-right: @global-padding;
+  }
+
+  .container {
+    padding-top: @global-padding / 2;
+    padding-bottom: @global-padding / 2;
+  }
+
+  .ja-module {
+    margin-bottom: 0;
+  }
+
+  .footnav {
+    font-size: @fontSizeSmall;
+    overflow: hidden;
+    margin: 0 -(@global-padding / 2) (@global-margin * 2);
+
+    .footer-block {
+      float: left;
+      padding: 0 @global-padding / 2;
+      width: 25%;
+    }
+
+    .nav > li {
+      border-bottom: 1px solid rgba(0,0,0,0.2);
+      display: block;
+      padding-bottom: @global-padding / 4;
+      margin-bottom: @global-margin / 4;
+
+      &:before {
+        display: none;
+      }
+
+      & > a {
+        text-transform: none;
+      }
+    }
+  }
+
+  // Footer Modules
+  .footer-position {
+    .pull-right();
+
+    @media only screen and (max-width: @screen-sm) {
+      float: none;
+      margin-bottom: @global-margin / 2;
+    }
+  }
+
+  // Footer Menu
+  .nav {
+    margin: 0;
+    text-align: right;
+
+    > li {
+      display: inline-block;
+      &:before {
+        .separator("/");
+        color: @grayLight;
+        margin: 0 6px;
+      }
+      &:first-child:before {
+        display: none;
+      }
+    }
+
+    > li > a {
+      background: none;
+      border-bottom: 1px solid transparent;
+      color: @textColor;
+      display: inline-block;
+      left: 0;
+      padding: 0;
+      text-transform: uppercase;
+
+      &:before {
+        display: none;
+      }
+
+      // Link States
+      &:hover, &:active, &:focus {
+        background: none;
+        border-bottom: 1px solid @textColor;
+        padding: 0;
+      }
+    }
+  }
+
+  // Footer Info
+  .footer-info {
+    text-transform: uppercase;
+    p {
+      margin: 0;
+      line-height: 1;
+    }
+
+    small {
+      font-size: 100%;
+
+      // Separator
+      &:after {
+        .separator("-");
+        color: @grayLight;
+        font-size: @baseFontSize;
+        margin: 0 1px 0 2px;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+  // Banner 
+  .banner {
+    display: block;
+    .clearfix();
+    text-align: center;
+  }
+
+}
+
+
+//
+// Subscribe form
+// --------------
+.subscribe-form {
+  text-align: center;
+
+  form {
+    margin-bottom: 0;
+  }
+
+  .input-group {
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: @global-margin;
+    width: 420px;
+
+    @media (max-width: @screen-xs) {
+      width: 100%;
+    }
+  }
+
+  input {
+    display: inline-block;
+  }
+
+  .input-group-addon {
+    background-color: @grayLighter;
+    border-radius: 3px 0 0 3px;
+    display: none;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    // Style on Tablet and Desktop
+    @media screen and (min-width: @screen-xs) {
+      display: inline-block;
+    }
+  }
+
+  .form-control {
+    float: left;
+    box-sizing: border-box;
+    height: 46px;
+    line-height: 46px;
+    margin: 0;
+    width: 250px;
+
+    @media (max-width: @screen-xs) {
+      width: 135px;
+    }
+  }
+
+  .input-group-btn .btn {
+    border-radius: 0 3px 3px 0;
+    float: left;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 @global-padding;
+    text-transform: uppercase;
+  }
+
+  #name, #email {
+    border-radius: 3px;
+    box-shadow: none;
+    padding: @global-padding / 2 @global-padding;
+    min-width: 250px;
+
+    @media (max-width: @screen-sm) {
+      min-width: 100px;
+      width: 120px;
+    }
+  }
+
+  #submit {
+    background-color: @grayDark;
+    border: 1px solid @grayDark;
+    border-radius: 3px;
+    color: @white;
+    padding: @global-padding / 2 @global-padding;
+    text-transform: uppercase;
+    transition: all 0.35s;
+
+    &:hover, &:active {
+      background-color: @brand-primary;
+      border-color: @brand-primary;
+    }
+  }
+}
+
+
+.docs-section {
+  margin-bottom: @global-margin * 3;
+  .page-header {
+    margin-bottom: @global-margin;
+  }
+}
+
+
+// Modal box
+// ---------
+#gallery-box {
+  border-radius: 0;
+
+  // Style on mobile
+  @media (max-width: @screen-sm) {
+    top: @global-margin * 2 !important;
+    transform: none !important;
+    width: 90% !important;
+  }
+
+  .modal-header {
+    h3 {
+      line-height: 50px;  
+    }
+  }
+
+  .modal-nav {
+    box-sizing: border-box;
+    position: absolute;
+    padding-right: 45px;
+    top: 50%;
+    overflow: hidden;
+    width: 100%;
+    z-index: 100;
+
+    & > span {
+      background-color: rgba(0,0,0,0.8);
+      color: @white;
+      display: inline-block;
+      font-size: 24px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      width: 40px;
+
+      &.btn-next {
+        float: right;
+      }
+
+      &:hover {
+        background-color: @brand-primary;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// Tags
+// ----
+.tags {
+  .tag {
+    .label {
+      background-color: @blue;
+      border-radius: 2px;
+      font-weight: normal;
+      padding: 5px 10px;
+    }
+  }
+}
+
+.img-wrap {
+  margin-bottom: @global-margin / 2;
+}
+
+
+// Color Swatchs
+// -------------
+.swatch-item {
+  min-height: @baseLineHeight * 5;
+  position: relative;
+
+  dl {
+    margin: 0;
+    padding: @global-padding;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    dd {
+      margin-left: 0;
+    }
+  }
+}
+
+.color-brand-primary {
+  background: @brand-primary;
+  color: @white;
+}
+
+.color-brand-secondary {
+  background-color: @brand-success;
+  color: @white; 
+}
+
+.color-brand-warning {
+  background-color: @brand-warning;
+  color: @white;
+}
+
+.color-brand-danger {
+  background-color: @brand-danger;
+  color: @white;
+}
+
+.color-brand-info {
+  background-color: @brand-info;
+  color: @white;
+}
+
+.color-brand-success {
+  background-color: @brand-success;
+  color: @white; 
+}
+
+.color-gray-darker {
+  background-color: @grayDarker;
+  color: @white;
+}
+
+.color-gray-dark {
+  background-color: @grayDark;
+  color: @white;  
+}
+
+.color-gray {
+  background-color: @gray;
+  color: @white;  
+}
+
+.color-gray-light {
+  background-color: @grayLight;
+  color: @white;
+}
+
+.color-gray-lighter {
+  background-color: @grayLighter;
+  color: @gray;
+}
+
+.color-gray-lightest {
+  background-color: @grayLightest;
+}

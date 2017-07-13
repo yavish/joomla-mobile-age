@@ -1,0 +1,210 @@
+
+body {
+	background-color: #ffffff;
+	color: #101010;
+	line-height: 1.4;
+	font-size: 16px;
+	font-family: PT Sans;
+	font-weight: 400;
+}
+
+
+/* Logo */
+a.logo strong {
+	width: 305px;
+	height: 90px;
+}
+
+
+a.logo strong {
+	background: url(/images/-3.png) no-repeat;
+	text-indent: -999em;
+}
+
+
+
+a {
+	color: #3498db;
+}
+
+a:hover, a:focus, a:active {
+	color: #303030;
+}
+
+/* common style */
+h1, h2, h3, h4, h5, h6 {
+	font-family: PT Sans;
+}
+
+/* JOOMLA STYLE
+--------------------------------------- */
+h2.item-title,
+.item-title h2,
+.item-page .page-header h2 {
+	font-family: PT Sans;
+}
+
+
+.items-row .item {
+	font-size: 16px;
+}
+
+/* Header */
+#header {
+	background-color: #ffffff;
+	border-color: #e0e0e0;
+	color: #101010;
+}
+
+#header a {
+	color: #101010;
+}
+
+#header a:hover, #header a:focus, #header a:active {
+	color: #3498db;
+}
+
+/* Main navigation */
+#mainnav {
+	background-color: #ffffff;
+	border-color: #eeeeee;
+}
+
+#mainnav .nav > li > a,
+#mainnav .nav span.separator {
+	color: #303030;
+}
+
+#mainnav .nav > li > a:hover,
+#mainnav .nav > li > a:focus,
+#mainnav .nav > li > a:active {
+	color: #303030;
+}
+
+#mainnav .nav > li > a:hover:after,
+#mainnav .nav > li:hover > a:after,
+#mainnav .nav > li.active > a:hover:after,
+#mainnav .nav > li > .separator:hover:after,
+#mainnav .nav > li:hover > .separator:after {
+	border-color: #303030;
+}
+
+#mainnav .nav > li.active > a,
+#mainnav .nav > li.active .separator {
+	color: #303030;
+}
+
+#mainnav .nav > li.active a:after,
+#mainnav .nav > li.active .separator:after {
+	border-color: #303030;
+}
+
+/* Dropdown menu */
+.dropdown-menu, .nav .nav-child {
+	background-color: #ffffff;
+}
+
+#mainnav .dropdown-menu > li,
+#mainnav .nav .nav-child > li {
+	/*border-bottom-color: rgba(255,255,255,0.2);*/
+}
+
+.dropdown-menu > li > a,
+.nav .nav-child > li > a {
+	color: #ffffff;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a,
+.nav .nav-child > li:hover > a,
+.nav .nav-child > li:focus > a {
+  background: #303030;
+  color: #ffffff;
+}
+
+.dropdown-menu, .nav .nav-child {
+	border-color: #303030;
+}
+
+/* Custom color for collapse menu */
+@media (max-width: 992px) {
+	#mainnav .nav-collapse .nav > li > a,
+	#mainnav .nav-collapse .nav > li > .separator {
+		color: #303030;
+	}
+
+	#mainnav .nav-collapse .nav > li > a:hover {
+		color: #303030;
+	}
+
+	#mainnav .nav > li > a:hover:after,
+	#mainnav .nav > li > a:focus:after,
+	#mainnav .nav > li:hover > a:after {
+		display: none;
+	}
+
+	#mainnav .nav-collapse .nav > li.active > a {
+		color: #004597;
+	}	
+}
+
+
+
+/* Search form */
+.navbar-form {
+	background-color: #303030;
+	color: #e0e0e0;
+}
+
+.navbar-form .search .inputbox {
+	color: #e0e0e0;
+}
+
+/* Footer
+--------- */
+#footer {
+	background: #ffffff;
+	border-color: #e0e0e0;
+	color: #909090;
+}
+
+#footer a {
+	color: #3498db;
+}
+
+#footer a:hover, #footer a:focus, #footer a:active {
+	color: #303030;
+}
+
+#footer .nav > li::before {
+	color: #909090;
+}
+
+/* Footer menu*/
+#footer .nav > li > a {
+	color: #303030;
+}
+
+#footer .nav > li > a:hover,
+#footer .nav > li > a:focus,
+#footer .nav > li > a:active {
+	border-color: #303030;
+	color: #303030;
+}
+
+
+/* Module Styles
+--------------------*/
+
+
+/* Module Styles
+--------------------*/
+
+
+/* Module Styles
+--------------------*/
+
+
+

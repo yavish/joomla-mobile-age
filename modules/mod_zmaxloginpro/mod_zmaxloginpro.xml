@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0" client="site" method="upgrade">
+	<name>ZMAXLOGINPRO</name>
+	<author>ZMAX团队</author>
+	<creationDate>2016-11-04</creationDate>
+	<copyright>南宁市程序人软件科技有限责任公司保留所有权利！</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>zhang19min88@163.com</authorEmail>
+	<authorUrl>www.zmax99.com</authorUrl>
+	<version>1.0.0</version>
+	<description>该模块提供第三方社交账号登陆和短信账号登陆</description>
+	<files>
+		<filename module="mod_zmaxloginpro">mod_zmaxloginpro.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>css</folder>
+		<folder>js</folder>
+		<folder>fields</folder>
+		<folder>images</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic"
+					 addfieldpath="/modules/mod_zmaxloginpro/fields">
+				<field 
+					name="layoutfile"
+					type="list"
+					default="system"
+					label="界面文件"
+					description="需要在前台显示的文件。系统自带,表示使用本模块自带的布局文件。自定义HTML表示使用自定义html中的内容作为布局文件"
+					>
+						<option value="custom">自定义HTML</option>
+						<option value="system">系统自带</option>
+				</field>
+				<field 
+					name="userimage"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="MOD_ZMAXLOGINPRO_SHOW_USERIMAGE_LABEL"
+					description="MOD_ZMAXLOGINPRO_SHOW_USERIMAGE_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				
+				<field 
+					name="joomlalogin"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="MOD_ZMAXLOGINPRO_SHOW_JOOMLALOGIN_LABEL"
+					description="MOD_ZMAXLOGINPRO_SHOW_JOOMLALOGIN_DESC"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field 
+					name="smslogin"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="0"
+					label="短信登陆"
+					description="是否显示短信登陆"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				
+				<field name="image_style"
+						type="list"
+						label="图片风格"
+						description="MOD_LOGIN_IMAGE_STYLE_LABEL"
+						default="round"
+						id="image_style"
+						onchange="changePic()"
+						>
+					<option value="round">MOD_LOGIN_IMAGE_STYLE_ROUND</option>
+					<option value="block">MOD_LOGIN_IMAGE_STYLE_BLOCK</option>
+				</field>
+				<field name="preview"
+					   type="preview"
+					   label="MOD_LOGIN_PREVIEW_LABEL"
+					   desc="MOD_LOGIN_PREVIEW_DESC"
+					   default="round"
+					   data="image_style"
+					/>
+				<field name="joomlalabel"
+					   type="text"
+					   label="JOOMLA登陆标题"
+					   default="账号登陆"
+					/>
+				<field name="smslabel"
+					   type="text"
+					   label="短信登陆标题"
+					   default="短信登陆"
+					/>
+				<field name="sociallabel"
+					   type="text"
+					   label="社交登陆标题"
+					   default="社交登陆"
+					/>
+				<field 
+					name="showlabeldesc"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="登陆描述"
+					description="是否显示登陆描述信息"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field name="joomlalabeldesc"
+					   type="text"
+					   label="JOOMLA登陆描述"
+					   default="使用本站账号登陆"
+					/>
+				<field name="smslabeldesc"
+					   type="text"
+					   label="短信登陆描述"
+					   default="使用短信账号登陆"
+					/>
+				<field name="sociallabeldesc"
+					   type="text"
+					   label="社交登陆描述"
+					   default="使用第三方社交账号登陆"
+					/>
+			</fieldset>
+			<fieldset name="custom" label="自定义输出">
+				<field 
+					name="custom_note"
+					type="note"
+					label="使用说明"
+					description="你可以使用自定义HTML代码来订制第三方登陆模块的显示效果。&lt;br/&gt; &lt;b/&gt;触发系统执行第三方登陆的方法非常的简单，只需要两个设置。&lt;ul&gt;&lt;li&gt;第一，在你需要触发的元素上加上类名 system-zmax-login-social-btn 。&lt;/li&gt;&lt;li&gt;第二 该给元素增加type属性。type属性代表索要所要触发的登陆类型。type的值可以为qq  weixin  weibo等等&lt;/li&gt;&lt;/ul&gt;&lt;/b&gt;&lt;/br&gt;举一个例子，你如果想触发QQ登陆&lt;pre&gt;  &lt;_a class='system-zmax-login-social-btn' type='qq'&gt;这里可以放图片&lt;_/a&gt;&lt;/pre&gt;"
+					class="alert alert-info"
+					/>
+				<field 
+					name="html"
+					type="editor"
+					label="自定义内容"
+					rows="5"
+					filter="JComponentHelper::filterText"
+					buttons="true"
+					cols="200"
+					class="span10"
+					/>
+				<field 
+					name="plg"
+					type="radio"
+					class="btn-group btn-group-yesno"
+					default="1"
+					label="执行内容插件"
+					description="是否允许执行内容插件"
+					>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+				</field>
+				<field 
+					type="textarea"
+					name="css"
+					label="CSS代码"
+					description="自定义的CSS代码"
+					class="span10"
+					rows="5"
+				/>		
+				<field 
+					type="textarea"
+					name="js"
+					label="JS代码"
+					description="自定义的JS代码"
+					class="span10"
+					rows="5"
+				/>		
+			</fieldset>
+			
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+			<server type="extension" priority="1" name="ZMAX第三方登录模块" >http://www.zmax99.com/autoupdate/auto-update-mod-zmaxloginpro.xml</server>
+	</updateservers>
+</extension>

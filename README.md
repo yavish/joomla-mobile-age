@@ -13,7 +13,7 @@ What does Joomla look like in the mobile age? sms  mobile number weixin  短信 
   1.1  support registration by mobile number ,sms verify 支持手机号码 注册与 图形 与短信验证码  ）<br>
   
   1.2  add support login  by email  ,mobile number  支持邮件 手机登录 用户名 三种方式登录<br>
-  1.3 add support login by weixin  , 微信开发放帐号 或公众号登录 两种方式。<br>
+  1.3 add support login by weixin  , 微信开发放帐号 或公众号登录 两种方式。需要自行向腾讯网站申请开通帐号<br>
        其中 手机号与微信相关采用zmax 的商业组件，请前往购买。<br>
        短信发送是采用 阿里的大于短信 接口， 需要开户购买 短信<br>
        
